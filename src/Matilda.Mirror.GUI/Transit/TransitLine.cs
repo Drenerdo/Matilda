@@ -53,7 +53,7 @@ namespace Matilda.Mirror.GUI.Transit
         {
             get
             {
-                return WalkTime;
+                return walkTime;
             }
             set
             {

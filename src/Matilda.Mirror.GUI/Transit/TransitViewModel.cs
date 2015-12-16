@@ -44,7 +44,7 @@ namespace Matilda.Mirror.GUI.Transit
             }
         }
 
-        ObservableCollection<TransitViewModel> lines;
+        ObservableCollection<TransitLineViewModel> lines;
         public ObservableCollection<TransitLineViewModel> Lines
         {
             get
@@ -93,14 +93,14 @@ namespace Matilda.Mirror.GUI.Transit
 
         private void updateLine(TransitLine updateLine, System.Collections.IList newArrivals)
         {
-            var lineToUpdate = Lines.Single(line => line.Equals(updatedLine));
+            var lineToUpdate = Lines.Single(line => line.Equals(updateLine));
             foreach(var newArrival in newArrivals)
             {
                 var arrival = DateTime.Parse(newArrival.ToString());
                 lineToUpdate.Arrivals.Add(new ArrivalViewModel()
                 {
                     ArrivalTime = arrival.ToString("h:mm"),
-                    WhenINeedToLeave = (arrival - DateTime.Now - updatedLine.WalkTime + TimeSpan.FromSeconds(1)).Minutes.ToString() + " min",
+                    WhenINeedToLeave = (arrival - DateTime.Now - updateLine.WalkTime + TimeSpan.FromSeconds(1)).Minutes.ToString() + " min",
                 }
                 );
             }
@@ -108,7 +108,7 @@ namespace Matilda.Mirror.GUI.Transit
 
         private void updateLines()
         {
-            var newLines = new ObservableCollection<TransitViewModel>();
+            var newLines = new ObservableCollection<TransitLineViewModel>();
             foreach (var line in model.Lines)
             {
                 newLines.Add(new TransitLineViewModel()

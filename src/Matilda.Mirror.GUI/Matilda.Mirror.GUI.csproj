@@ -128,6 +128,9 @@
       <DependentUpon>WeatherThisWeekView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Weather\WeatherThisWeekViewModel.cs" />
+    <Compile Include="Weather\WeatherTodayView.xaml.cs">
+      <DependentUpon>WeatherTodayView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Weather\WeatherTodayViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +163,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Weather\WeatherThisWeekView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Weather\WeatherTodayView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

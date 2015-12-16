@@ -79,6 +79,7 @@ namespace Matilda.Mirror.GUI.Weather
                     Snowfall = forecast.Snowfall.Value,
                 });
             }
+            return hourlyForecast;
         }
     }
 }

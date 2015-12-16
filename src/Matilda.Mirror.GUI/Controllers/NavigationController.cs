@@ -47,7 +47,7 @@ namespace Matilda.Mirror.GUI.Controllers
         private void navigateNext()
         {
             screenId++;
-            if (screenId < maxScreenId)
+            if (screenId > maxScreenId)
             {
                 screenId = 0;
             }
