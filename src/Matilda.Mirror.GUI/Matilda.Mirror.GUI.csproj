@@ -98,10 +98,37 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
+    <Compile Include="BaseModel.cs" />
+    <Compile Include="Clock\ClockModel.cs" />
+    <Compile Include="Clock\ClockView.xaml.cs">
+      <DependentUpon>ClockView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Clock\ClockViewModel.cs" />
+    <Compile Include="Controllers\NavigationController.cs" />
+    <Compile Include="Controllers\TimerController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyChangedBase.cs" />
+    <Compile Include="Transit\ArrivalViewModel.cs" />
+    <Compile Include="Transit\TransitLine.cs" />
+    <Compile Include="Transit\TransitLineViewModel.cs" />
+    <Compile Include="Transit\TransitModel.cs" />
+    <Compile Include="Transit\TransitModel_fake.cs" />
+    <Compile Include="Transit\TransitView.xaml.cs">
+      <DependentUpon>TransitView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Transit\TransitViewModel.cs" />
+    <Compile Include="Weather\DailyForecastViewModel.cs" />
+    <Compile Include="Weather\Helpers.cs" />
+    <Compile Include="Weather\HourlyForecastViewModel.cs" />
+    <Compile Include="Weather\WeatherDetailsModel.cs" />
+    <Compile Include="Weather\WeatherModel.cs" />
+    <Compile Include="Weather\WeatherModel_fake.cs" />
+    <Compile Include="Weather\WeatherModel_wunderground.cs" />
+    <Compile Include="Weather\WeatherThisWeekView.xaml.cs">
+      <DependentUpon>WeatherThisWeekView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Weather\WeatherThisWeekViewModel.cs" />
+    <Compile Include="Weather\WeatherTodayViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -124,9 +151,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="Clock\ClockView.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Transit\TransitView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Weather\WeatherThisWeekView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
