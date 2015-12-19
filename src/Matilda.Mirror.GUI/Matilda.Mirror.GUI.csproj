@@ -104,6 +104,13 @@
       <DependentUpon>ClockView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Clock\ClockViewModel.cs" />
+    <Compile Include="Closet\Clothing.cs" />
+    <Compile Include="Closet\ClothingType.cs" />
+    <Compile Include="Closet\ClothingViewModel.cs" />
+    <Compile Include="Closet\PriceUnit.cs" />
+    <Compile Include="Closet\ProcessState.cs" />
+    <Compile Include="Closet\Size.cs" />
+    <Compile Include="Controllers\DataServicesController.cs" />
     <Compile Include="Controllers\NavigationController.cs" />
     <Compile Include="Controllers\TimerController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

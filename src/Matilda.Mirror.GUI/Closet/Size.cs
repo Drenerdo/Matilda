@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Matilda.Mirror.GUI.Closet
 {
-    public class ClosetViewModel
+    public enum Size
     {
+        xsmall,
+        small,
+        medium,
+        large,
+        xlarge,
+        xxlarge
     }
 }

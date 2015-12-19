@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Matilda.Mirror.GUI.Closet
 {
-    class ClosetModel
+    public enum PriceUnit
     {
+        EUR,
+        USD,
+        CENT,
+        YUAN,
+        POUND,
+        PENCE
     }
 }
