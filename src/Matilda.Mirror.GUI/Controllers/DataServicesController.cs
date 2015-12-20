@@ -10,10 +10,10 @@ namespace Matilda.Mirror.GUI.Controllers
 {
     public class DataServicesController
     {
-        public ObservableCollection<Clothing> GetClothings()
+        public ObservableCollection<ClothingModel> GetClothings()
         {
-            ObservableCollection<Clothing> Clothings = new ObservableCollection<Clothing>();
-            Clothings.Add(new Clothing()
+            ObservableCollection<ClothingModel> Clothings = new ObservableCollection<ClothingModel>();
+            Clothings.Add(new ClothingModel()
             {
                 Refid = "",
                 Brand = "",
@@ -24,7 +24,7 @@ namespace Matilda.Mirror.GUI.Controllers
                 MainPhoto = @"..\Resources\Images\p1.jpg"
             });
 
-            Clothings.Add(new Clothing()
+            Clothings.Add(new ClothingModel()
             {
                 Refid = "",
                 Brand = "",
@@ -35,7 +35,7 @@ namespace Matilda.Mirror.GUI.Controllers
                 MainPhoto = @"..\Resources\Images\p1.jpg"
             });
 
-            Clothings.Add(new Clothing()
+            Clothings.Add(new ClothingModel()
             {
                 Refid = "",
                 Brand = "",
@@ -46,7 +46,7 @@ namespace Matilda.Mirror.GUI.Controllers
                 MainPhoto = @"..\Resources\Images\p1.jpg"
             });
 
-            Clothings.Add(new Clothing()
+            Clothings.Add(new ClothingModel()
             {
                 Refid = "",
                 Brand = "",

@@ -6,12 +6,14 @@
     xmlns:clock="using:Matilda.Mirror.GUI.Clock"
     xmlns:transit="using:Matilda.Mirror.GUI.Transit"
     xmlns:weather="using:Matilda.Mirror.GUI.Weather"
+    xmlns:closet="using:Matilda.Mirror.GUI.Closet"
     RequestedTheme="Light">
     <Application.Resources>
         <clock:ClockViewModel x:Key="clockViewModel"/>
         <transit:TransitViewModel x:Key="transitViewModel"/>
         <weather:WeatherThisWeekViewModel x:Key="weatherThisWeekViewModel"/>
         <weather:WeatherTodayViewModel x:Key="weatherTodayViewModel"/>
+        <closet:ClothingViewModel x:Key="ClothingViewModel"/>
     </Application.Resources>
 
 </Application>

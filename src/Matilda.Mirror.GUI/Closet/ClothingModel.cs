@@ -7,7 +7,7 @@ using Windows.UI;
 
 namespace Matilda.Mirror.GUI.Closet
 {
-    public class Clothing
+    public class ClothingModel
     {
         public string Refid { set; get; }
         public string Name { set; get; }

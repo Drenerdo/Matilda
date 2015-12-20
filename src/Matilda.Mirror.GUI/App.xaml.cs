@@ -1,4 +1,6 @@
-﻿using Matilda.Mirror.GUI.Clock;
+﻿using Matilda.Mirror.GUI.Amentities;
+using Matilda.Mirror.GUI.Clock;
+using Matilda.Mirror.GUI.Closet;
 using Matilda.Mirror.GUI.Controllers;
 using Matilda.Mirror.GUI.Transit;
 using Matilda.Mirror.GUI.Weather;
@@ -52,6 +54,8 @@ namespace Matilda.Mirror.GUI
             typeof(WeatherTodayView),
             typeof(WeatherThisWeekView),
             typeof(TransitView),
+            typeof(ClothingView),
+            typeof(AmentitiesView)
         };
 
         /// <summary>
@@ -75,6 +79,10 @@ namespace Matilda.Mirror.GUI
             clockModel.Update();
             TimerController.RegisterModel(clockModel);
             (Resources["clockViewModel"] as ClockViewModel).Initialize(clockModel);
+
+            var clothingmodel = new ClothingModel();
+
+            var amentitiesmodel = new AmentitiesModel();
 
             var weatherModel = new WeatherModel_fake();
             weatherModel.Update();

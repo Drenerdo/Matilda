@@ -11,15 +11,15 @@ namespace Matilda.Mirror.GUI.Closet
     {
         public ClothingViewModel()
         {
-            Clothings = new ObservableCollection<Clothing>();
+            Clothings = new ObservableCollection<ClothingModel>();
             CurrentIndex = -1;
         }
 
-        public ObservableCollection<Clothing> Clothings;
+        public ObservableCollection<ClothingModel> Clothings;
 
         public int CurrentIndex;
 
-        public Clothing CurrentClothing
+        public ClothingModel CurrentClothing
         {
             get
             {
