@@ -44,7 +44,7 @@ namespace Matilda.Mirror.GUI.Transit
             };
         }
 
-        public override void Update()
+        public override async Task Update()
         {
             var line = Lines[getRandomInt(this.Lines.Count())];
             line.Arrivals.Add(DateTime.Now + TimeSpan.FromMinutes(getRandomInt(10)));

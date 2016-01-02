@@ -21,7 +21,7 @@ namespace Matilda.Mirror.GUI.Controllers
                 Unit = PriceUnit.USD,
                 Type = ClothingType.DRESS,
                 Sizes = new List<Size> { Size.small, Size.large, Size.xlarge },
-                MainPhoto = @"..\Resources\Images\p1.jpg"
+                MainPhoto = @"ms-appx:///Resources/Clothing/dress.jpg"
             });
 
             Clothings.Add(new ClothingModel()
@@ -32,7 +32,7 @@ namespace Matilda.Mirror.GUI.Controllers
                 Unit = PriceUnit.USD,
                 Type = ClothingType.DRESS,
                 Sizes = new List<Size> { Size.small, Size.large, Size.xlarge },
-                MainPhoto = @"..\Resources\Images\p1.jpg"
+                MainPhoto = @"ms-appx:///Resources/Clothing/jacket.jpg"
             });
 
             Clothings.Add(new ClothingModel()
@@ -43,7 +43,7 @@ namespace Matilda.Mirror.GUI.Controllers
                 Unit = PriceUnit.USD,
                 Type = ClothingType.DRESS,
                 Sizes = new List<Size> { Size.small, Size.large, Size.xlarge },
-                MainPhoto = @"..\Resources\Images\p1.jpg"
+                MainPhoto = @"ms-appx:///Resources/Clothing/jeans.jpg"
             });
 
             Clothings.Add(new ClothingModel()
@@ -54,7 +54,7 @@ namespace Matilda.Mirror.GUI.Controllers
                 Unit = PriceUnit.USD,
                 Type = ClothingType.LADYWEAR,
                 Sizes = new List<Size> { Size.small, Size.large, Size.xlarge },
-                MainPhoto = @"..\Resources\Images\p1.jpg"
+                MainPhoto = @"ms-appx:///Resources/Clothing/skirt.jpg"
             });
             return Clothings;
         }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,7 +28,7 @@ namespace Matilda.Mirror.GUI.Transit
 
         public override TimeSpan Interval => TimeSpan.FromMinutes(5);
 
-        public override void Update()
+        public override async Task Update()
         {
             throw new NotImplementedException();
         }

@@ -8,12 +8,13 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock 
-            x:Name="textBlock" 
-            HorizontalAlignment="Center"
-            TextWrapping="Wrap" 
-            Text="Amentities are listed here!" 
-            VerticalAlignment="Center"/>
+
+        <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="40,60,0,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Resources/Amentities/book.jpg"/>
+        <Image x:Name="notebook" HorizontalAlignment="Right" Height="100" VerticalAlignment="Top" Width="100" Source="ms-appx:///Resources/Amentities/notebook.jpg" Margin="0,264,88,0"/>
+        <Image x:Name="shampoo" HorizontalAlignment="Left" Height="100" Margin="40,264,0,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Resources/Amentities/shampoo.jpg"/>
+        <Image x:Name="slippers" HorizontalAlignment="Right" Height="100" Margin="0,60,88,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Resources/Amentities/book.jpg"/>
+        <Image x:Name="food" HorizontalAlignment="Left" Height="100" Margin="40,443,0,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Resources/Amentities/shampoo.jpg"/>
+        <Image x:Name="wine" HorizontalAlignment="Right" Height="100" Margin="0,443,88,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Resources/Amentities/book.jpg"/>
 
     </Grid>
 </Page>

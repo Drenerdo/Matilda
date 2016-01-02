@@ -9,7 +9,7 @@
     DataContext="{StaticResource clockViewModel}">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel VerticalAlignment="Center">
+        <StackPanel VerticalAlignment="Top">
             <TextBlock
                 HorizontalAlignment="Center"
                 FontSize="30"
@@ -21,5 +21,22 @@
                 Text="{Binding Path=CurrentDate, FallbackValue=Date will be shown here}" 
                 />
         </StackPanel>
+
+        <StackPanel HorizontalAlignment="Left" Margin="27,98,0,516">
+            <TextBlock x:Name="Notification"  TextWrapping="Wrap" Text="Notification"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Right" Margin="0,98,51,502">
+            <TextBlock x:Name="Music" TextWrapping="Wrap" Text="Music"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Left" Margin="27,344,0,256">
+            <TextBlock x:Name="Amentities" TextWrapping="Wrap" Text="Amentities"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Right" Margin="0,344,49,256">
+            <TextBlock x:Name="Closet" TextWrapping="Wrap" Text="Closet"/>
+        </StackPanel>
+
     </Grid>
 </Page>

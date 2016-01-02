@@ -63,7 +63,7 @@ namespace Matilda.Mirror.GUI
         /// will be used such as when the application is launched to open a specific file.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+        protected override async void OnLaunched(LaunchActivatedEventArgs e)
         {
 
 #if DEBUG
@@ -76,7 +76,7 @@ namespace Matilda.Mirror.GUI
             CoreWindow.GetForCurrentThread().KeyDown += navigation.GlobalKeyDown;
 
             var clockModel = new ClockModel();
-            clockModel.Update();
+            await clockModel.Update();
             TimerController.RegisterModel(clockModel);
             (Resources["clockViewModel"] as ClockViewModel).Initialize(clockModel);
 
@@ -85,13 +85,13 @@ namespace Matilda.Mirror.GUI
             var amentitiesmodel = new AmentitiesModel();
 
             var weatherModel = new WeatherModel_fake();
-            weatherModel.Update();
+            await weatherModel.Update();
             TimerController.RegisterModel(weatherModel);
             (Resources["weatherThisWeekViewModel"] as WeatherThisWeekViewModel).Initialize(weatherModel);
             (Resources["weatherTodayViewModel"] as WeatherTodayViewModel).Initialize(weatherModel);
 
             var transitModel = new TransitModel_fake();
-            transitModel.Update();
+            await transitModel.Update();
             TimerController.RegisterModel(transitModel);
             (Resources["transitViewModel"] as TransitViewModel).Initialize(transitModel);
 #endif

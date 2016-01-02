@@ -10,11 +10,19 @@ namespace Matilda.Mirror.GUI
     {
         public abstract TimeSpan Interval { get; }
 
-        public abstract void Update();
+        public abstract Task Update();
 
-        internal void TimerTick(object sender, object e)
+        internal async void TimerTick(object sender, object e)
         {
-            Update();
+            try
+            {
+                await Update();
+            }
+            catch
+            {
+
+            }
+
         }
     }
 }

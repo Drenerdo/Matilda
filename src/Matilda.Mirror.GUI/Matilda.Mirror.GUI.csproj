@@ -92,6 +92,15 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\Amentities\book.jpg" />
+    <Content Include="Resources\Amentities\notebook.JPG" />
+    <Content Include="Resources\Amentities\shampoo.jpg" />
+    <Content Include="Resources\Amentities\slippers.jpg" />
+    <Content Include="Resources\Clothing\dress.jpg" />
+    <Content Include="Resources\Clothing\jacket.jpg" />
+    <Content Include="Resources\Clothing\jeans.jpg" />
+    <Content Include="Resources\Clothing\skirt.jpg" />
+    <Content Include="Resources\Clothing\suit.jpg" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +121,9 @@
     </Compile>
     <Compile Include="Clock\ClockViewModel.cs" />
     <Compile Include="Closet\ClothingModel.cs" />
+    <Compile Include="Closet\ClothingTryingOnControl.xaml.cs">
+      <DependentUpon>ClothingTryingOnControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Closet\ClothingType.cs" />
     <Compile Include="Closet\ClothingView.xaml.cs">
       <DependentUpon>ClothingView.xaml</DependentUpon>
@@ -179,6 +191,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Closet\ClothingTryingOnControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Closet\ClothingView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -196,6 +212,7 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

@@ -8,12 +8,33 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+        <Grid>
+            <Image HorizontalAlignment="Left" Height="100" Margin="29,207,0,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Resources/Clothing/dress.jpg"/>
+        </Grid>
+
+        <Grid>
+            <Image HorizontalAlignment="Left" Height="100" Margin="111,82,0,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Resources/Clothing/jacket.jpg"/>
+        </Grid>
+
+        <Grid>
+            <Image HorizontalAlignment="Left" Height="100" Margin="10,463,0,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Resources/Clothing/skirt.jpg"/>
+        </Grid>
+
+        <Grid>
+            <Image HorizontalAlignment="Left" Height="100" Margin="108,350,0,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Resources/Clothing/suit.jpg"/>
+        </Grid>
         <TextBlock 
-            x:Name="textBlock" 
-            HorizontalAlignment="Center" 
+            x:Name="itemlist" 
+            HorizontalAlignment="Left" 
+            Margin="277,84,0,0" 
             TextWrapping="Wrap" 
-            Text="Clothing list goes here!" 
-            VerticalAlignment="Center"/>
+            Text="Item List" 
+            VerticalAlignment="Top"
+            />
+        
+
+
 
     </Grid>
 </Page>
