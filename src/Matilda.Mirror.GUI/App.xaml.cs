@@ -84,7 +84,7 @@ namespace Matilda.Mirror.GUI
 
             var amentitiesmodel = new AmentitiesModel();
 
-            var weatherModel = new WeatherModel_fake();
+            var weatherModel = new WeatherModel_wunderground();
             await weatherModel.Update();
             TimerController.RegisterModel(weatherModel);
             (Resources["weatherThisWeekViewModel"] as WeatherThisWeekViewModel).Initialize(weatherModel);

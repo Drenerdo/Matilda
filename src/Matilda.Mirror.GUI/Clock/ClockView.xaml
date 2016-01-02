@@ -22,19 +22,19 @@
                 />
         </StackPanel>
 
-        <StackPanel HorizontalAlignment="Left" Margin="27,98,0,516">
+        <StackPanel HorizontalAlignment="Left" Margin="27,141,0,473">
             <TextBlock x:Name="Notification"  TextWrapping="Wrap" Text="Notification"/>
         </StackPanel>
 
-        <StackPanel HorizontalAlignment="Right" Margin="0,98,51,502">
+        <StackPanel HorizontalAlignment="Right" Margin="0,141,67,459">
             <TextBlock x:Name="Music" TextWrapping="Wrap" Text="Music"/>
         </StackPanel>
 
-        <StackPanel HorizontalAlignment="Left" Margin="27,344,0,256">
+        <StackPanel HorizontalAlignment="Left" Margin="34,570,0,30">
             <TextBlock x:Name="Amentities" TextWrapping="Wrap" Text="Amentities"/>
         </StackPanel>
 
-        <StackPanel HorizontalAlignment="Right" Margin="0,344,49,256">
+        <StackPanel HorizontalAlignment="Right" Margin="0,570,67,30">
             <TextBlock x:Name="Closet" TextWrapping="Wrap" Text="Closet"/>
         </StackPanel>
 
