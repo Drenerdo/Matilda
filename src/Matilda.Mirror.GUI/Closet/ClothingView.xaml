@@ -9,28 +9,28 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         
-        <Grid>
-            <Image HorizontalAlignment="Left" Height="100" Margin="29,207,0,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Resources/Clothing/dress.jpg"/>
-        </Grid>
+        
 
-        <Grid>
-            <Image HorizontalAlignment="Left" Height="100" Margin="111,82,0,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Resources/Clothing/jacket.jpg"/>
-        </Grid>
+        <ListView x:Name="Images" ItemsSource="{Binding Clothings}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Image HorizontalAlignment="Left" Height="100" Margin="29,207,0,0" VerticalAlignment="Top" Width="100" Source="{Binding MainPhoto}"/>
+                        <TextBlock Text="{Binding Name}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
-        <Grid>
-            <Image HorizontalAlignment="Left" Height="100" Margin="10,463,0,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Resources/Clothing/skirt.jpg"/>
-        </Grid>
-
-        <Grid>
-            <Image HorizontalAlignment="Left" Height="100" Margin="108,350,0,0" VerticalAlignment="Top" Width="100" Source="ms-appx:///Resources/Clothing/suit.jpg"/>
-        </Grid>
+        
+        
         <TextBlock 
             x:Name="itemlist" 
             HorizontalAlignment="Left" 
-            Margin="277,84,0,0" 
+            Margin="707,112,0,0" 
             TextWrapping="Wrap" 
             Text="Item List" 
-            VerticalAlignment="Top"
+            VerticalAlignment="Top" TextAlignment="Center" FontSize="26.667"
             />
         
 

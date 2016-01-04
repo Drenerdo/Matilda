@@ -25,7 +25,7 @@
             <TextBlock TextWrapping="Wrap" Text="{Binding Path=RainForecast, FallbackValue=RainForecast}"/>
         </StackPanel>
 
-        <ListView x:Name="listView" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Height="100"
+        <ListView x:Name="listView" Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="100"
                   Margin="10,10,10,0" Grid.Row="1" VerticalAlignment="Top" 
                   ItemsSource="{Binding Path=Forecast}">
 

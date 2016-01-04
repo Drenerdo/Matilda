@@ -92,10 +92,23 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\Amentities\bathrobe.jpg" />
     <Content Include="Resources\Amentities\book.jpg" />
+    <Content Include="Resources\Amentities\cottonballs.jpg" />
+    <Content Include="Resources\Amentities\Facewipes.jpg" />
+    <Content Include="Resources\Amentities\Floss.jpg" />
+    <Content Include="Resources\Amentities\handsoap.jpg" />
+    <Content Include="Resources\Amentities\Hangers.jpg" />
+    <Content Include="Resources\Amentities\linens.gif" />
     <Content Include="Resources\Amentities\notebook.JPG" />
+    <Content Include="Resources\Amentities\qtips.jpg" />
+    <Content Include="Resources\Amentities\scent.jpg" />
+    <Content Include="Resources\Amentities\sextoy.jpg" />
     <Content Include="Resources\Amentities\shampoo.jpg" />
+    <Content Include="Resources\Amentities\showercap.jpg" />
     <Content Include="Resources\Amentities\slippers.jpg" />
+    <Content Include="Resources\Amentities\Toothbrush.jpg" />
+    <Content Include="Resources\Amentities\towels.jpg" />
     <Content Include="Resources\Clothing\dress.jpg" />
     <Content Include="Resources\Clothing\jacket.jpg" />
     <Content Include="Resources\Clothing\jeans.jpg" />
@@ -120,6 +133,7 @@
       <DependentUpon>ClockView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Clock\ClockViewModel.cs" />
+    <Compile Include="Closet\Clothing.cs" />
     <Compile Include="Closet\ClothingModel.cs" />
     <Compile Include="Closet\ClothingTryingOnControl.xaml.cs">
       <DependentUpon>ClothingTryingOnControl.xaml</DependentUpon>
@@ -131,7 +145,11 @@
     <Compile Include="Closet\ClothingViewModel.cs" />
     <Compile Include="Closet\PriceUnit.cs" />
     <Compile Include="Closet\ProcessState.cs" />
+    <Compile Include="Closet\SelectedClothingControl.xaml.cs">
+      <DependentUpon>SelectedClothingControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Closet\Size.cs" />
+    <Compile Include="Controllers\AmentitiesServicesController.cs" />
     <Compile Include="Controllers\DataServicesController.cs" />
     <Compile Include="Controllers\NavigationController.cs" />
     <Compile Include="Controllers\TimerController.cs" />
@@ -196,6 +214,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Closet\ClothingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Closet\SelectedClothingControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

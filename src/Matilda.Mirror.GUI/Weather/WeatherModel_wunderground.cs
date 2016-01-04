@@ -67,7 +67,7 @@ namespace Matilda.Mirror.GUI.Weather
                     TemperatureHigh = Int32.Parse(daily["high"]["fahrenheit"].ToString()),
                     TemperatureLow = Int32.Parse(daily["low"]["fahrenheit"].ToString()),
                     Rainfall = Int32.Parse(daily["qpf_allday"]["mm"].ToString()),
-                    Snowfall = Int32.Parse(daily["snow_allday"]["cm"].ToString()),
+                    Snowfall = decimal.Parse(daily["snow_allday"]["cm"].ToString()),
                     Time = epoch.DateTime,
                 };
                 dailyForecast.Add(forecast);

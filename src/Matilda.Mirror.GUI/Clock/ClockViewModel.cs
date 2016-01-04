@@ -27,6 +27,8 @@ namespace Matilda.Mirror.GUI.Clock
         }
 
         private string currentDate;
+        internal static object _clockViewModel;
+
         public string CurrentDate
         {
             get

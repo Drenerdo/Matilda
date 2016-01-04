@@ -15,11 +15,12 @@ namespace Matilda.Mirror.GUI.Controllers
             ObservableCollection<ClothingModel> Clothings = new ObservableCollection<ClothingModel>();
             Clothings.Add(new ClothingModel()
             {
+                Name = "Test",
                 Refid = "",
                 Brand = "",
                 Price = 229,
                 Unit = PriceUnit.USD,
-                Type = ClothingType.DRESS,
+                Type = ClothingType.JACKET,
                 Sizes = new List<Size> { Size.small, Size.large, Size.xlarge },
                 MainPhoto = @"ms-appx:///Resources/Clothing/dress.jpg"
             });

@@ -12,6 +12,6 @@ namespace Matilda.Mirror.GUI.Weather
         public int Temperature { get; set; }
         public string Conditions { get; set; }
         public int Rainfall { get; set; }
-        public int Snowfall { get; set; }
+        public decimal Snowfall { get; set; }
     }
 }

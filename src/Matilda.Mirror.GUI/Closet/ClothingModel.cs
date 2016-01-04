@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Matilda.Mirror.GUI.Controllers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using Windows.UI;
 
 namespace Matilda.Mirror.GUI.Closet
 {
-    public class ClothingModel
+    public class ClothingModel : DataServicesController
     {
         public string Refid { set; get; }
         public string Name { set; get; }

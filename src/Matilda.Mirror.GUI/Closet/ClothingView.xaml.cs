@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Matilda.Mirror.GUI.Controllers;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -22,9 +24,13 @@ namespace Matilda.Mirror.GUI.Closet
     /// </summary>
     public sealed partial class ClothingView : Page
     {
+        public ObservableCollection<ClothingModel> Clothings = new ObservableCollection<ClothingModel>();
         public ClothingView()
         {
             this.InitializeComponent();
+            DataServicesController myContext = new DataServicesController();
+            Clothings = myContext.GetClothings();
+            this.Images.ItemsSource = Clothings;
         }
     }
 }
