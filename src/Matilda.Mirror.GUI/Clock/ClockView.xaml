@@ -31,11 +31,17 @@
         </StackPanel>
 
         <StackPanel HorizontalAlignment="Left" Margin="37,856,0,173" Width="390">
-            <TextBlock x:Name="Amentities" TextWrapping="Wrap" Text="Amentities" TextAlignment="Center" Foreground="#FFFFFBFB"/>
+            <TextBlock x:Name="Amentities" TextWrapping="Wrap" Text="Amentities" TextAlignment="Center" Foreground="#FFFFFBFB" Height="40" FontSize="26.667"/>
+            <Grid>
+                <AppBarButton Icon="Add" Margin="312,-48,0,-4" Foreground="White"/>
+            </Grid>
         </StackPanel>
 
         <StackPanel HorizontalAlignment="Right" Margin="0,856,32,173" Width="406">
-            <TextBlock x:Name="Closet" TextWrapping="Wrap" Text="Closet" TextAlignment="Center" Foreground="White"/>
+            <TextBlock x:Name="Closet" TextWrapping="Wrap" Text="Closet" TextAlignment="Center" Foreground="#FFFFFBFB" Height="40" FontSize="26.667"/>
+            <Grid>
+                <AppBarButton Icon="Add" Margin="312,-48,0,-4" Foreground="White"/>
+            </Grid>
         </StackPanel>
 
     </Grid>
