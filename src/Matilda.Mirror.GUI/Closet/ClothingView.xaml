@@ -8,10 +8,24 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        
-        
+        <!--<GridView
+            x:Name="Images"
+            ItemsSource="{Binding Images}"/>-->
 
-        <ListView x:Name="Images" ItemsSource="{Binding Clothings}">
+        <GridView x:Name="Images" Grid.Column="2" ItemsSource="{Binding Clothings}">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Center" Source="{Binding MainPhoto}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+
+
+
+
+        <!--<ListView x:Name="Images" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Top" ItemsSource="{Binding Clothings}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
@@ -20,19 +34,12 @@
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>
+        </ListView>-->
+        
+        
 
         
-        
-        <TextBlock 
-            x:Name="itemlist" 
-            HorizontalAlignment="Left" 
-            Margin="707,112,0,0" 
-            TextWrapping="Wrap" 
-            Text="Item List" 
-            VerticalAlignment="Top" TextAlignment="Center" FontSize="26.667"
-            />
-        
+       
 
 
 

@@ -81,8 +81,8 @@
             </Grid>
 
         </Grid>
-        <Button x:Name="btnRemove" Content="Remove" HorizontalAlignment="Left" Margin="806,77.667,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <Button x:Name="btnBuy" Content="Buy Now" HorizontalAlignment="Left" Margin="595,77.667,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Button x:Name="btnRemove" Content="Remove" HorizontalAlignment="Left" Margin="146,55.667,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Button x:Name="btnBuy" Content="Buy Now" HorizontalAlignment="Left" Margin="271,55.667,0,0" Grid.Row="1" VerticalAlignment="Top"/>
 
     </Grid>
 </UserControl>
