@@ -22,7 +22,7 @@
                 />
         </StackPanel>
 
-        <StackPanel Margin="10,85,212,370">
+        <StackPanel Margin="16,129,0,0" HorizontalAlignment="Left" Width="142" Height="190" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment">
             <TextBlock
                 HorizontalAlignment="Center"
                 FontSize="14.667"
@@ -31,7 +31,7 @@
                 />
         </StackPanel>
 
-        <StackPanel Margin="207,85,10,370">
+        <StackPanel Margin="0,129,10,0" HorizontalAlignment="Right" Width="145" Height="195" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment">
             <TextBlock
                 HorizontalAlignment="Center"
                 FontSize="14.667"
@@ -40,7 +40,7 @@
                 />
         </StackPanel>
 
-        <StackPanel Margin="10,440,212,10">
+        <StackPanel Height="201" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="145" Margin="16,0,0,57" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment">
             <TextBlock
                 HorizontalAlignment="Center"
                 FontSize="14.667"
@@ -49,7 +49,7 @@
                 />
         </StackPanel>
 
-        <StackPanel Margin="207,440,10,10">
+        <StackPanel Margin="0,0,10,57" Height="201" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="145" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment">
             <TextBlock
                 HorizontalAlignment="Center"
                 FontSize="14.667"
