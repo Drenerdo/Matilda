@@ -22,27 +22,43 @@
                 />
         </StackPanel>
 
-        <StackPanel HorizontalAlignment="Left" Margin="30,253,0,760" Width="397">
-            <TextBlock x:Name="Notification"  TextWrapping="Wrap" Text="Notification" TextAlignment="Center" Foreground="#FFE6E4E4"/>
+        <StackPanel Margin="10,85,212,370">
+            <TextBlock
+                HorizontalAlignment="Center"
+                FontSize="14.667"
+                Text="Notifications"
+                Foreground="White"
+                />
         </StackPanel>
 
-        <StackPanel HorizontalAlignment="Right" Margin="0,253,32,760" Width="406">
-            <TextBlock x:Name="Music" TextWrapping="Wrap" Text="Music" TextAlignment="Center" Foreground="White"/>
+        <StackPanel Margin="207,85,10,370">
+            <TextBlock
+                HorizontalAlignment="Center"
+                FontSize="14.667"
+                Text="Music"
+                Foreground="White"
+                />
         </StackPanel>
 
-        <StackPanel HorizontalAlignment="Left" Margin="37,856,0,173" Width="390">
-            <TextBlock x:Name="Amentities" TextWrapping="Wrap" Text="Amentities" TextAlignment="Center" Foreground="#FFFFFBFB" Height="40" FontSize="26.667"/>
-            <Grid>
-                <AppBarButton Icon="Add" Margin="312,-48,0,-4" Foreground="White"/>
-            </Grid>
+        <StackPanel Margin="10,440,212,10">
+            <TextBlock
+                HorizontalAlignment="Center"
+                FontSize="14.667"
+                Text="Amentities"
+                Foreground="White"
+                />
         </StackPanel>
 
-        <StackPanel HorizontalAlignment="Right" Margin="0,856,32,173" Width="406">
-            <TextBlock x:Name="Closet" TextWrapping="Wrap" Text="Closet" TextAlignment="Center" Foreground="#FFFFFBFB" Height="40" FontSize="26.667"/>
-            <Grid>
-                <AppBarButton Icon="Add" Margin="312,-48,0,-4" Foreground="White"/>
-            </Grid>
+        <StackPanel Margin="207,440,10,10">
+            <TextBlock
+                HorizontalAlignment="Center"
+                FontSize="14.667"
+                Text="Closet"
+                Foreground="White"
+                />
         </StackPanel>
+
+
 
     </Grid>
 </Page>

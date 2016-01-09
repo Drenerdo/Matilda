@@ -26,8 +26,8 @@
 
         <Grid Grid.RowSpan="2">
             <!--<Image HorizontalAlignment="Left" Height="192" Margin="230,201,0,0" VerticalAlignment="Top" Width="192" Source="ms-appx:///Resources/Amentities/book.jpg"/>-->
-            <Ellipse Width="214"
-                     Height="214" HorizontalAlignment="Left" Margin="163,204,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <Ellipse Width="95"
+                     Height="95" HorizontalAlignment="Left" Margin="205,250,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
                 <Ellipse.Fill>
                     <ImageBrush>
                         <ImageBrush.ImageSource>
@@ -39,8 +39,8 @@
         </Grid>
         <Grid Grid.RowSpan="2">
             <!--<Image HorizontalAlignment="Left" Height="170" Margin="236,460,0,0" VerticalAlignment="Top" Width="170" Source="ms-appx:///Resources/Amentities/shampoo.jpg"/>-->
-            <Ellipse Width="221"
-                     Height="221" HorizontalAlignment="Right" Margin="0,201,103,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <Ellipse Width="95"
+                     Height="95" HorizontalAlignment="Right" Margin="0,251,211,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
                 <Ellipse.Fill>
                     <ImageBrush>
                         <ImageBrush.ImageSource>
@@ -79,8 +79,8 @@
 
         <Grid Grid.RowSpan="2">
             <!--<Image HorizontalAlignment="Left" Height="208" Margin="249,708,0,0" VerticalAlignment="Top" Width="130" Source="ms-appx:///Resources/Amentities/bathrobe.jpg"/>-->
-            <Ellipse Width="199"
-                     Height="199" HorizontalAlignment="Left" Margin="163,0,0,418" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
+            <Ellipse Width="107"
+                     Height="107" HorizontalAlignment="Left" Margin="203,0,0,454" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
                 <Ellipse.Fill>
                     <ImageBrush>
                         <ImageBrush.ImageSource>
@@ -93,8 +93,8 @@
 
         <Grid Grid.RowSpan="2">
             <!--<Image HorizontalAlignment="Left" Height="177" Margin="222,974,0,0" VerticalAlignment="Top" Width="177" Source="ms-appx:///Resources/Amentities/cottonballs.jpg"/>-->
-            <Ellipse Width="199"
-                     Height="199" HorizontalAlignment="Left" Margin="168,0,0,140" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
+            <Ellipse Width="103"
+                     Height="103" HorizontalAlignment="Left" Margin="44,0,0,111" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
                 <Ellipse.Fill>
                     <ImageBrush>
                         <ImageBrush.ImageSource>
@@ -107,21 +107,11 @@
 
         <Grid Grid.RowSpan="2">
             <!--<Image HorizontalAlignment="Right" Height="142" Margin="0,690,243,0" VerticalAlignment="Top" Width="200" Source="ms-appx:///Resources/Amentities/Facewipes.jpg"/>-->
-            <Ellipse Width="221"
-                     Height="221" HorizontalAlignment="Right" Margin="0,0,102,112" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.Fill>
-                    <ImageBrush>
-                        <ImageBrush.ImageSource>
-                            <BitmapImage UriSource="ms-appx:///Resources/Amentities/Facewipes.jpg" />
-                        </ImageBrush.ImageSource>
-                    </ImageBrush>
-                </Ellipse.Fill>
-            </Ellipse>
         </Grid>
 
         <Grid Grid.RowSpan="2">
             <!--<Image HorizontalAlignment="Right" Height="190" Margin="0,968,256,0" VerticalAlignment="Top" Width="135" Source="ms-appx:///Resources/Amentities/Floss.jpg"/>-->
-            <Ellipse Margin="0,0,103,413" Height="210" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="210">
+            <Ellipse Margin="0,0,203,454" Height="107" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="107">
                 <Ellipse.Fill>
                     <ImageBrush>
                         <ImageBrush.ImageSource>
