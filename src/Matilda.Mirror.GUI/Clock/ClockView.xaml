@@ -10,12 +10,12 @@
 
     <Grid Background="Black">
         <StackPanel VerticalAlignment="Top">
-            <TextBlock
+            <TextBlock x:Name="CurrentTime"
                 HorizontalAlignment="Center"
                 FontSize="30"
                 Text="{Binding Path=CurrentTime, FallbackValue=Time will be shown here}" Foreground="White" 
                 />
-            <TextBlock
+            <TextBlock x:Name="CurrentDate"
                 HorizontalAlignment="Center"
                 FontSize="30"
                 Text="{Binding Path=CurrentDate, FallbackValue=Date will be shown here}" Foreground="White" 
@@ -23,7 +23,7 @@
         </StackPanel>
 
         <StackPanel Margin="16,129,0,0" HorizontalAlignment="Left" Width="142" Height="190" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment">
-            <TextBlock
+            <TextBlock x:Name="Notifications"
                 HorizontalAlignment="Center"
                 FontSize="14.667"
                 Text="Notifications"
@@ -32,7 +32,7 @@
         </StackPanel>
 
         <StackPanel Margin="0,129,10,0" HorizontalAlignment="Right" Width="145" Height="195" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment">
-            <TextBlock
+            <TextBlock x:Name="Music"
                 HorizontalAlignment="Center"
                 FontSize="14.667"
                 Text="Music"
@@ -41,24 +41,23 @@
         </StackPanel>
 
         <StackPanel Height="201" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="145" Margin="16,0,0,57" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment">
-            <TextBlock
+            <TextBlock x:Name="Amentities"
                 HorizontalAlignment="Center"
                 FontSize="14.667"
                 Text="Amentities"
-                Foreground="White"
+                Foreground="White" Margin="10,0,63,0" Width="72"
                 />
         </StackPanel>
 
         <StackPanel Margin="0,0,10,57" Height="201" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="145" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment">
-            <TextBlock
-                HorizontalAlignment="Center"
-                FontSize="14.667"
-                Text="Closet"
-                Foreground="White"
+
+            <TextBlock x:Name="Closet"
+        		HorizontalAlignment="Left"
+        		FontSize="14.667"
+        		Text="Closet"
+        		Foreground="White"
+        		Margin="10,0,0,0" Width="43" d:LayoutOverrides="HorizontalAlignment"
                 />
         </StackPanel>
-
-
-
     </Grid>
 </Page>
