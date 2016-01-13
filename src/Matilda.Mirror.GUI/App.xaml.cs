@@ -51,10 +51,11 @@ namespace Matilda.Mirror.GUI
         private List<Type> availableScreens = new List<Type>()
         {
             typeof(ClockView),
-            typeof(WeatherTodayView),
-            typeof(WeatherThisWeekView),
-            typeof(TransitView),
+            //typeof(WeatherTodayView),
+            //typeof(WeatherThisWeekView),
+            //typeof(TransitView),
             typeof(ClothingView),
+            typeof(ClothingTryingOnControl),
             typeof(AmentitiesView)
         };
 

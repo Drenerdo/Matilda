@@ -133,7 +133,6 @@
       <DependentUpon>ClockView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Clock\ClockViewModel.cs" />
-    <Compile Include="Closet\Clothing.cs" />
     <Compile Include="Closet\ClothingModel.cs" />
     <Compile Include="Closet\ClothingTryingOnControl.xaml.cs">
       <DependentUpon>ClothingTryingOnControl.xaml</DependentUpon>
@@ -143,11 +142,9 @@
       <DependentUpon>ClothingView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Closet\ClothingViewModel.cs" />
+    <Compile Include="Closet\Color.cs" />
     <Compile Include="Closet\PriceUnit.cs" />
     <Compile Include="Closet\ProcessState.cs" />
-    <Compile Include="Closet\SelectedClothingControl.xaml.cs">
-      <DependentUpon>SelectedClothingControl.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Closet\Size.cs" />
     <Compile Include="Controllers\AmentitiesServicesController.cs" />
     <Compile Include="Controllers\DataServicesController.cs" />
@@ -217,10 +214,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Closet\SelectedClothingControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Transit\TransitView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -234,7 +227,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Music\" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

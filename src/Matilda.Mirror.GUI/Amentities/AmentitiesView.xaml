@@ -5,123 +5,74 @@
     xmlns:local="using:Matilda.Mirror.GUI.Amentities"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Width="964" Height="1416">
 
     <Grid Background="Black">
-        <!--<Grid.RowDefinitions>
-            <RowDefinition Height="119*"/>
-            <RowDefinition Height="601*"/>
-        </Grid.RowDefinitions>-->
+        <Ellipse HorizontalAlignment="Left" Height="240" Margin="141,119,0,0" VerticalAlignment="Top" Width="202">
+            <Ellipse.Fill>
+                <ImageBrush>
+                    <ImageBrush.ImageSource>
+                        <BitmapImage
+                                UriSource="ms-appx:///Resources/Amentities/bathrobe.jpg"/>
+                    </ImageBrush.ImageSource>
+                </ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        
+        
+        <Ellipse HorizontalAlignment="Left" Height="240" Margin="597,119,0,0" VerticalAlignment="Top" Width="202">
+            <Ellipse.Fill>
+                <ImageBrush>
+                    <ImageBrush.ImageSource>
+                        <BitmapImage
+                                UriSource="ms-appx:///Resources/Amentities/Slippers.jpg"/>
+                    </ImageBrush.ImageSource>
+                </ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>
 
-        <TextBlock 
-            x:Name="Selected" 
-            HorizontalAlignment="Left" 
-            Margin="676,83,0,0" 
-            TextWrapping="Wrap" 
-            Text="Selected" 
-            VerticalAlignment="Top" FontSize="33.333" Foreground="White"
-            />
+        <Ellipse HorizontalAlignment="Left" Height="240" Margin="141,449,0,0" VerticalAlignment="Top" Width="202">
+            <Ellipse.Fill>
+                <ImageBrush>
+                    <ImageBrush.ImageSource>
+                        <BitmapImage
+                                UriSource="ms-appx:///Resources/Amentities/Floss.jpg"/>
+                    </ImageBrush.ImageSource>
+                </ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>
 
+        <Ellipse HorizontalAlignment="Left" Height="240" Margin="597,449,0,0" VerticalAlignment="Top" Width="202">
+            <Ellipse.Fill>
+                <ImageBrush>
+                    <ImageBrush.ImageSource>
+                        <BitmapImage
+                                UriSource="ms-appx:///Resources/Amentities/Toothbrush.jpg"/>
+                    </ImageBrush.ImageSource>
+                </ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>
 
+        <Ellipse HorizontalAlignment="Left" Height="240" Margin="141,767,0,0" VerticalAlignment="Top" Width="202">
+            <Ellipse.Fill>
+                <ImageBrush>
+                    <ImageBrush.ImageSource>
+                        <BitmapImage
+                                UriSource="ms-appx:///Resources/Amentities/Hangers.jpg"/>
+                    </ImageBrush.ImageSource>
+                </ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>
 
-        <Grid Grid.RowSpan="2">
-            <!--<Image HorizontalAlignment="Left" Height="192" Margin="230,201,0,0" VerticalAlignment="Top" Width="192" Source="ms-appx:///Resources/Amentities/book.jpg"/>-->
-            <Ellipse Width="95"
-                     Height="95" HorizontalAlignment="Left" Margin="205,250,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.Fill>
-                    <ImageBrush>
-                        <ImageBrush.ImageSource>
-                            <BitmapImage UriSource="ms-appx:///Resources/Amentities/book.jpg" />
-                        </ImageBrush.ImageSource>
-                    </ImageBrush>
-                </Ellipse.Fill>
-            </Ellipse>
-        </Grid>
-        <Grid Grid.RowSpan="2">
-            <!--<Image HorizontalAlignment="Left" Height="170" Margin="236,460,0,0" VerticalAlignment="Top" Width="170" Source="ms-appx:///Resources/Amentities/shampoo.jpg"/>-->
-            <Ellipse Width="95"
-                     Height="95" HorizontalAlignment="Right" Margin="0,251,211,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.Fill>
-                    <ImageBrush>
-                        <ImageBrush.ImageSource>
-                            <BitmapImage UriSource="ms-appx:///Resources/Amentities/shampoo.jpg" />
-                        </ImageBrush.ImageSource>
-                    </ImageBrush>
-                </Ellipse.Fill>
-            </Ellipse>
-        </Grid>
-
-        <Grid Grid.RowSpan="2">
-            <!--<Image HorizontalAlignment="Right" Height="170" Margin="0,208,244,0" VerticalAlignment="Top" Width="170" Source="ms-appx:///Resources/Amentities/notebook.jpg"/>-->
-            <Ellipse Width="216" HorizontalAlignment="Left" Margin="167,512,0,712" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="TopPosition, BottomPosition">
-                <Ellipse.Fill>
-                    <ImageBrush>
-                        <ImageBrush.ImageSource>
-                            <BitmapImage UriSource="ms-appx:///Resources/Amentities/notebook.jpg" />
-                        </ImageBrush.ImageSource>
-                    </ImageBrush>
-                </Ellipse.Fill>
-            </Ellipse>
-        </Grid>
-
-        <Grid Grid.RowSpan="2">
-            <!--<Image HorizontalAlignment="Right" Height="159" Margin="0,460,220,0" VerticalAlignment="Top" Width="199" Source="ms-appx:///Resources/Amentities/slippers.jpg"/>-->
-            <Ellipse Width="212" HorizontalAlignment="Right" Margin="0,513,106,715" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="TopPosition, BottomPosition">
-                <Ellipse.Fill>
-                    <ImageBrush>
-                        <ImageBrush.ImageSource>
-                            <BitmapImage UriSource="ms-appx:///Resources/Amentities/slippers.jpg" />
-                        </ImageBrush.ImageSource>
-                    </ImageBrush>
-                </Ellipse.Fill>
-            </Ellipse>
-        </Grid>
-
-        <Grid Grid.RowSpan="2">
-            <!--<Image HorizontalAlignment="Left" Height="208" Margin="249,708,0,0" VerticalAlignment="Top" Width="130" Source="ms-appx:///Resources/Amentities/bathrobe.jpg"/>-->
-            <Ellipse Width="107"
-                     Height="107" HorizontalAlignment="Left" Margin="203,0,0,454" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.Fill>
-                    <ImageBrush>
-                        <ImageBrush.ImageSource>
-                            <BitmapImage UriSource="ms-appx:///Resources/Amentities/bathrobe.jpg" />
-                        </ImageBrush.ImageSource>
-                    </ImageBrush>
-                </Ellipse.Fill>
-            </Ellipse>
-        </Grid>
-
-        <Grid Grid.RowSpan="2">
-            <!--<Image HorizontalAlignment="Left" Height="177" Margin="222,974,0,0" VerticalAlignment="Top" Width="177" Source="ms-appx:///Resources/Amentities/cottonballs.jpg"/>-->
-            <Ellipse Width="103"
-                     Height="103" HorizontalAlignment="Left" Margin="44,0,0,111" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
-                <Ellipse.Fill>
-                    <ImageBrush>
-                        <ImageBrush.ImageSource>
-                            <BitmapImage UriSource="ms-appx:///Resources/Amentities/cottonballs.jpg" />
-                        </ImageBrush.ImageSource>
-                    </ImageBrush>
-                </Ellipse.Fill>
-            </Ellipse>
-        </Grid>
-
-        <Grid Grid.RowSpan="2">
-            <!--<Image HorizontalAlignment="Right" Height="142" Margin="0,690,243,0" VerticalAlignment="Top" Width="200" Source="ms-appx:///Resources/Amentities/Facewipes.jpg"/>-->
-        </Grid>
-
-        <Grid Grid.RowSpan="2">
-            <!--<Image HorizontalAlignment="Right" Height="190" Margin="0,968,256,0" VerticalAlignment="Top" Width="135" Source="ms-appx:///Resources/Amentities/Floss.jpg"/>-->
-            <Ellipse Margin="0,0,203,454" Height="107" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="107">
-                <Ellipse.Fill>
-                    <ImageBrush>
-                        <ImageBrush.ImageSource>
-                            <BitmapImage UriSource="ms-appx:///Resources/Amentities/Floss.jpg" />
-                        </ImageBrush.ImageSource>
-                    </ImageBrush>
-                </Ellipse.Fill>
-            </Ellipse>
-        </Grid>
-
-
+        <Ellipse HorizontalAlignment="Left" Height="240" Margin="597,767,0,0" VerticalAlignment="Top" Width="202">
+            <Ellipse.Fill>
+                <ImageBrush>
+                    <ImageBrush.ImageSource>
+                        <BitmapImage
+                                UriSource="ms-appx:///Resources/Amentities/sextoy.jpg"/>
+                    </ImageBrush.ImageSource>
+                </ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>
     </Grid>
 </Page>

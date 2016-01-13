@@ -13,6 +13,6 @@
         <transit:TransitViewModel x:Key="transitViewModel"/>
         <weather:WeatherThisWeekViewModel x:Key="weatherThisWeekViewModel"/>
         <weather:WeatherTodayViewModel x:Key="weatherTodayViewModel"/>
-        <closet:ClothingViewModel x:Key="ClothingViewModel"/>
+        <!--<closet:ClothingViewModel x:Key="ClothingViewModel"/>-->
     </Application.Resources>
 </Application>

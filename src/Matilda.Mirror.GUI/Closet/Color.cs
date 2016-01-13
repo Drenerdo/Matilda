@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace Matilda.Mirror.GUI.Closet
 {
-    public enum Size
+    public enum Color
     {
-        xsmall,
-        small,
-        xlarge,
-        large,
-        xxlarge,
-        medium,
-        xmedium
+        Red,
+        Blue,
+        Purple,
+        Yellow,
+        Green,
+        Black
     }
 }

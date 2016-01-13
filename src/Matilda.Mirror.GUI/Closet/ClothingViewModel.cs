@@ -23,7 +23,7 @@ namespace Matilda.Mirror.GUI.Closet
         {
             get
             {
-                if (CurrentIndex != -1 && Clothings.Count != 0)
+                if(CurrentIndex != -1 && Clothings.Count != 0)
                 {
                     return Clothings[CurrentIndex];
                 }

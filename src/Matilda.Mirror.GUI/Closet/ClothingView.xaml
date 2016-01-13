@@ -5,41 +5,28 @@
     xmlns:local="using:Matilda.Mirror.GUI.Closet"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Height="2202" Width="1376">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <!--<GridView
-            x:Name="Images"
-            ItemsSource="{Binding Images}"/>-->
-
-        <GridView x:Name="Images" Grid.Column="2" ItemsSource="{Binding Clothings}">
-            <GridView.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel>
-                        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Center" Source="{Binding MainPhoto}"/>
-                    </StackPanel>
-                </DataTemplate>
-            </GridView.ItemTemplate>
-        </GridView>
+    <Grid Background="Black">
+        <Grid Margin="10,138,796,44">
+            <Image x:Name="image1" HorizontalAlignment="Left" Height="218" VerticalAlignment="Top" Width="151" Margin="35,39,0,0" Source="ms-appx:///Resources/Amentities/bathrobe.jpg" Stretch="Fill"/>
+            <Image x:Name="image2" HorizontalAlignment="Left" Height="211" VerticalAlignment="Top" Width="180" Margin="249,214,0,0" Source="ms-appx:///Resources/Clothing/suit.jpg" Stretch="Fill"/>
+            <Image x:Name="image3" HorizontalAlignment="Left" Height="227" VerticalAlignment="Top" Width="170" Margin="16,369,0,0" Source="ms-appx:///Resources/Clothing/jacket.jpg" Stretch="Fill"/>
+            <Image x:Name="image5" HorizontalAlignment="Left" Height="249" VerticalAlignment="Top" Width="180" Margin="249,553,0,0" Source="ms-appx:///Resources/Clothing/dress.jpg" Stretch="Fill"/>
+            <Image x:Name="image6" HorizontalAlignment="Left" Height="230" VerticalAlignment="Top" Width="170" Margin="35,704,0,0" Source="ms-appx:///Resources/Clothing/jeans.jpg" Stretch="Fill"/>
+        </Grid>
 
 
 
+        <TextBlock x:Name="ItemLists" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Item List" Foreground="White" VerticalAlignment="Top" Margin="624,214,240,0" Width="512" TextAlignment="Center" FontSize="53.333" Height="85"/>
 
-        <!--<ListView x:Name="Images" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Top" ItemsSource="{Binding Clothings}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel>
-                        <Image HorizontalAlignment="Left" Height="100" Margin="29,207,0,0" VerticalAlignment="Top" Width="100" Source="{Binding MainPhoto}"/>
-                        <TextBlock Text="{Binding Name}" />
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>-->
-        
-        
+        <TextBlock x:Name="Brought" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Purchased" Foreground="Wheat" VerticalAlignment="Top" Margin="824,467,406,0" Width="146" TextAlignment="Center" FontSize="26.667"/>
 
-        
-       
+        <TextBlock x:Name="Loved" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Favorite" Foreground="Wheat" VerticalAlignment="Top" Margin="824,718,406,0" Width="146" TextAlignment="Center" FontSize="26.667"/>
+
+
+
+
 
 
 

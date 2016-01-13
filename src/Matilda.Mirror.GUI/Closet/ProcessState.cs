@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace Matilda.Mirror.GUI.Closet
 {
-    enum ProcessState
+    class ProcessState
     {
-        Selecting,
-        Trying
     }
 }

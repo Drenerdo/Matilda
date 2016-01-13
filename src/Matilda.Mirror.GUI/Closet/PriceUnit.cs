@@ -8,9 +8,7 @@ namespace Matilda.Mirror.GUI.Closet
 {
     public enum PriceUnit
     {
-        EUR,
         USD,
-        CENT,
         YUAN,
         POUND,
         PENCE
