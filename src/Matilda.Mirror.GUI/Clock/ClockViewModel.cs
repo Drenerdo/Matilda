@@ -62,8 +62,8 @@ namespace Matilda.Mirror.GUI.Clock
 
         private void updateTime()
         {
-            CurrentTime = model.CurrentTime.ToString("h:mm");
-            CurrentDate = model.CurrentTime.ToString("MMMM d");
+            CurrentTime = model.CurrentTime.ToString("h:mm tt");
+            CurrentDate = model.CurrentTime.ToString("dddd MMMM d");
         }
     }
 }

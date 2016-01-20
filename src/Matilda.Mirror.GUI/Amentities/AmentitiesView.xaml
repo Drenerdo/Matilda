@@ -5,9 +5,23 @@
     xmlns:local="using:Matilda.Mirror.GUI.Amentities"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Width="964" Height="1416">
+    mc:Ignorable="d" 
+    Height="1920" Width="1080"
+    DataContext="{StaticResource clockViewModel}">
 
     <Grid Background="Black">
+        <StackPanel VerticalAlignment="Top">
+            <TextBlock x:Name="CurrentTime"
+                HorizontalAlignment="Center"
+                FontSize="30"
+                Text="{Binding Path=CurrentDate, FallbackValue=Date will be shown here}" Foreground="White" 
+                />
+            <TextBlock x:Name="CurrentDate"
+                HorizontalAlignment="Center"
+                FontSize="30"
+                Text="{Binding Path=CurrentTime, FallbackValue=Time will be shown here}" Foreground="White" 
+                />
+        </StackPanel>
         <Ellipse HorizontalAlignment="Left" Height="240" Margin="141,119,0,0" VerticalAlignment="Top" Width="202">
             <Ellipse.Fill>
                 <ImageBrush>

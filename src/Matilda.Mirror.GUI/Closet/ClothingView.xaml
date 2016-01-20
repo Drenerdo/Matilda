@@ -5,10 +5,25 @@
     xmlns:local="using:Matilda.Mirror.GUI.Closet"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Height="2202" Width="1376">
+    mc:Ignorable="d" 
+    Height="1920" Width="1080"
+    DataContext="{StaticResource clockViewModel}">
 
     <Grid Background="Black">
-        <Grid Margin="10,138,796,44">
+        <StackPanel VerticalAlignment="Top">
+            <TextBlock x:Name="CurrentTime"
+                HorizontalAlignment="Center"
+                FontSize="30"
+                Text="{Binding Path=CurrentDate, FallbackValue=Date will be shown here}" Foreground="White" 
+                />
+            <TextBlock x:Name="CurrentDate"
+                HorizontalAlignment="Center"
+                FontSize="30"
+                Text="{Binding Path=CurrentTime, FallbackValue=Time will be shown here}" Foreground="White" 
+                />
+        </StackPanel>
+        
+        <Grid Margin="10,138,609,44">
             <Image x:Name="image1" HorizontalAlignment="Left" Height="218" VerticalAlignment="Top" Width="151" Margin="35,39,0,0" Source="ms-appx:///Resources/Amentities/bathrobe.jpg" Stretch="Fill"/>
             <Image x:Name="image2" HorizontalAlignment="Left" Height="211" VerticalAlignment="Top" Width="180" Margin="249,214,0,0" Source="ms-appx:///Resources/Clothing/suit.jpg" Stretch="Fill"/>
             <Image x:Name="image3" HorizontalAlignment="Left" Height="227" VerticalAlignment="Top" Width="170" Margin="16,369,0,0" Source="ms-appx:///Resources/Clothing/jacket.jpg" Stretch="Fill"/>
@@ -20,9 +35,9 @@
 
         <TextBlock x:Name="ItemLists" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Item List" Foreground="White" VerticalAlignment="Top" Margin="624,214,240,0" Width="512" TextAlignment="Center" FontSize="53.333" Height="85"/>
 
-        <TextBlock x:Name="Brought" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Purchased" Foreground="Wheat" VerticalAlignment="Top" Margin="824,467,406,0" Width="146" TextAlignment="Center" FontSize="26.667"/>
+        <TextBlock x:Name="Brought" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Purchased" Foreground="Wheat" VerticalAlignment="Top" Margin="676,486,258,0" Width="146" TextAlignment="Center" FontSize="26.667"/>
 
-        <TextBlock x:Name="Loved" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Favorite" Foreground="Wheat" VerticalAlignment="Top" Margin="824,718,406,0" Width="146" TextAlignment="Center" FontSize="26.667"/>
+        <TextBlock x:Name="Loved" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Favorite" Foreground="Wheat" VerticalAlignment="Top" Margin="676,718,258,0" Width="146" TextAlignment="Center" FontSize="26.667"/>
 
 
 
