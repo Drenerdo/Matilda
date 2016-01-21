@@ -26,5 +26,15 @@ namespace Matilda.Mirror.GUI.Clock
         {
             this.InitializeComponent();
         }
+
+        private void Amentities_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Amentities.AmentitiesView));
+        }
+
+        private void closet_btn_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Closet.ClothingView));
+        }
     }
 }

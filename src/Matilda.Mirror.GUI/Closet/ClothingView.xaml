@@ -23,35 +23,20 @@
                 />
         </StackPanel>
 
-        <!--<Grid>
-            <ListBox x:Name="list1">
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <Canvas Width="143.032" Height="25.9208">
-                            <Path x:Name="icon" Width="29.4324" Height="25.9198" Canvas.Left="113.6" Canvas.Top="0" Stretch="Fill" Fill="#FFA0A0A0" Data="F1 M 137.514,9.25708L 141.193,9.25711C 141.193,9.25711 143.032,9.32352 143.032,11.1085C 143.032,12.8934 139.353,24.0685 139.353,24.0685C 139.353,24.0685 138.651,25.9198 137.514,25.9198L 119.118,25.9198C 117.924,25.9198 117.279,24.0685 117.279,24.0685C 117.279,24.0685 113.6,12.9022 113.6,11.1085C 113.6,9.31485 115.439,9.25711 115.439,9.25711L 119.118,9.25711L 128.316,0L 137.514,9.25708 Z M 122.797,9.25711L 133.835,9.25717L 128.316,3.70285L 122.797,9.25711 Z "/>
-                            <Path x:Name="heart" Width="26.2332" Height="23.0399" Canvas.Left="0" Canvas.Top="2.88095" Stretch="Fill" Fill="#FFA0A0A0" Data="M 26.2332,9.46375C 26.2332,5.828 23.2971,2.88095 19.6751,2.88095C 16.0528,2.88098 13.1168,5.93372 13.1168,9.46378C 13.1168,5.82803 10.1804,2.88098 6.55844,2.88098C 2.93637,2.88098 0,5.82803 0,9.46378C 0,16.0326 13.1168,25.9208 13.1168,25.9208C 13.1168,25.9208 26.2332,16.0218 26.2332,9.46375 Z "/>
-                        </Canvas>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
-        </Grid>-->
-        
-        
-        
-        
-        <Path x:Name="bg" Width="184.357" Stretch="Fill" Fill="#FFFFFFFF" Data="M 413.44,71.3609L 413.44,338.881L 239.36,338.881L 239.36,71.3609L 413.44,71.3609 Z " HorizontalAlignment="Left" Margin="141.123,253.48,0,0" UseLayoutRounding="False" Height="267.52" VerticalAlignment="Top"/>
-        <Viewbox x:Name="roll" Width="151" Height="25.9208" HorizontalAlignment="Left" Margin="158,273,0,0" VerticalAlignment="Top">
+
+        <Path x:Name="bg" Width="184.357" Stretch="Fill" Fill="#FFFFFFFF" Data="M 413.44,71.3609L 413.44,338.881L 239.36,338.881L 239.36,71.3609L 413.44,71.3609 Z " HorizontalAlignment="Left" Margin="141.643,214,0,0" UseLayoutRounding="False" Height="267.52" VerticalAlignment="Top"/>
+        <Viewbox x:Name="roll" Width="151" Height="25.9208" HorizontalAlignment="Left" Margin="159,234,0,0" VerticalAlignment="Top">
             <Canvas Width="143.032" Height="25.9208">
                 <Path x:Name="icon" Width="29.4324" Height="25.9198" Canvas.Left="113.6" Canvas.Top="0" Stretch="Fill" Fill="#FFA0A0A0" Data="F1 M 137.514,9.25708L 141.193,9.25711C 141.193,9.25711 143.032,9.32352 143.032,11.1085C 143.032,12.8934 139.353,24.0685 139.353,24.0685C 139.353,24.0685 138.651,25.9198 137.514,25.9198L 119.118,25.9198C 117.924,25.9198 117.279,24.0685 117.279,24.0685C 117.279,24.0685 113.6,12.9022 113.6,11.1085C 113.6,9.31485 115.439,9.25711 115.439,9.25711L 119.118,9.25711L 128.316,0L 137.514,9.25708 Z M 122.797,9.25711L 133.835,9.25717L 128.316,3.70285L 122.797,9.25711 Z "/>
                 <Path x:Name="heart" Width="26.2332" Height="23.0399" Canvas.Left="0" Canvas.Top="2.88095" Stretch="Fill" Fill="#FFA0A0A0" Data="M 26.2332,9.46375C 26.2332,5.828 23.2971,2.88095 19.6751,2.88095C 16.0528,2.88098 13.1168,5.93372 13.1168,9.46378C 13.1168,5.82803 10.1804,2.88098 6.55844,2.88098C 2.93637,2.88098 0,5.82803 0,9.46378C 0,16.0326 13.1168,25.9208 13.1168,25.9208C 13.1168,25.9208 26.2332,16.0218 26.2332,9.46375 Z "/>
             </Canvas>
         </Viewbox>
-        <Image x:Name="img" Source="ms-appx:///Resources/Amentities/bathrobe.jpg" Margin="-55,166,0,0" HorizontalAlignment="Left" Height="341" VerticalAlignment="Top" Width="219">
+        <Image x:Name="img" Source="ms-appx:///Resources/Clothing/jeans.jpg" Margin="-92,94,0,0" HorizontalAlignment="Left" Height="494" VerticalAlignment="Top" Width="468">
             <Image.RenderTransform>
                 <CompositeTransform ScaleY="0.32" ScaleX="0.32" TranslateX="249.27999877929688" TranslateY="177.281005859375"/>
             </Image.RenderTransform>
         </Image>
-        <Viewbox HorizontalAlignment="Left" Height="44" Margin="141,477,0,0" VerticalAlignment="Top" Width="184">
+        <Viewbox HorizontalAlignment="Left" Height="44" Margin="142,438,0,0" VerticalAlignment="Top" Width="184">
             <Grid Height="50" Width="311">
                 <TextBlock x:Name="Comme_des_Garçons_Play" TextAlignment="Center" FontFamily="Segoe UI" FontSize="13.333" VerticalAlignment="Top" HorizontalAlignment="Left" Width="311" Margin="-63,5,0,0">
                     <TextBlock.RenderTransform>
@@ -71,12 +56,110 @@
         </Viewbox>
 
 
+        <Path x:Name="bg_Copy" Width="184.357" Stretch="Fill" Fill="#FFFFFFFF" Data="M 413.44,71.3609L 413.44,338.881L 239.36,338.881L 239.36,71.3609L 413.44,71.3609 Z " HorizontalAlignment="Left" Margin="27,596.96,0,0" UseLayoutRounding="False" Height="267.52" VerticalAlignment="Top"/>
+        <Viewbox x:Name="roll_Copy" Width="151" Height="25.9208" HorizontalAlignment="Left" Margin="44,616,0,0" VerticalAlignment="Top">
+            <Canvas Width="143.032" Height="25.9208">
+                <Path x:Name="icon1" Width="29.4324" Height="25.9198" Canvas.Left="113.6" Canvas.Top="0" Stretch="Fill" Fill="#FFA0A0A0" Data="F1 M 137.514,9.25708L 141.193,9.25711C 141.193,9.25711 143.032,9.32352 143.032,11.1085C 143.032,12.8934 139.353,24.0685 139.353,24.0685C 139.353,24.0685 138.651,25.9198 137.514,25.9198L 119.118,25.9198C 117.924,25.9198 117.279,24.0685 117.279,24.0685C 117.279,24.0685 113.6,12.9022 113.6,11.1085C 113.6,9.31485 115.439,9.25711 115.439,9.25711L 119.118,9.25711L 128.316,0L 137.514,9.25708 Z M 122.797,9.25711L 133.835,9.25717L 128.316,3.70285L 122.797,9.25711 Z "/>
+                <Path x:Name="heart1" Width="26.2332" Height="23.0399" Canvas.Left="0" Canvas.Top="2.88095" Stretch="Fill" Fill="#FFA0A0A0" Data="M 26.2332,9.46375C 26.2332,5.828 23.2971,2.88095 19.6751,2.88095C 16.0528,2.88098 13.1168,5.93372 13.1168,9.46378C 13.1168,5.82803 10.1804,2.88098 6.55844,2.88098C 2.93637,2.88098 0,5.82803 0,9.46378C 0,16.0326 13.1168,25.9208 13.1168,25.9208C 13.1168,25.9208 26.2332,16.0218 26.2332,9.46375 Z "/>
+            </Canvas>
+        </Viewbox>
+        <Image x:Name="img_Copy" Source="ms-appx:///Resources/Clothing/jacket.jpg" Margin="-194,480,0,0" HorizontalAlignment="Left" Height="477" VerticalAlignment="Top" Width="407">
+            <Image.RenderTransform>
+                <CompositeTransform ScaleY="0.32" ScaleX="0.32" TranslateX="249.27999877929688" TranslateY="177.281005859375"/>
+            </Image.RenderTransform>
+        </Image>
+        <Viewbox HorizontalAlignment="Left" Height="44" Margin="27,820,0,0" VerticalAlignment="Top" Width="184">
+            <Grid Height="50" Width="311">
+                <TextBlock x:Name="Comme_des_Garçons_Play1" TextAlignment="Center" FontFamily="Segoe UI" FontSize="13.333" VerticalAlignment="Top" HorizontalAlignment="Left" Width="311" Margin="-63,5,0,0">
+                    <TextBlock.RenderTransform>
+                        <CompositeTransform ScaleY="1.333" ScaleX="1.333" TranslateX="16.039699554443359" TranslateY="-6.7647800445556641"/>
+                    </TextBlock.RenderTransform>
+        			<Run Text="COMME DES GARÇONS PLAY" Foreground="#FF333333"/>
+                </TextBlock>
+                <TextBlock x:Name="Black_Heart_Logo_Converse_Edition1" FontFamily="Segoe UI" FontSize="10.667" VerticalAlignment="Top" HorizontalAlignment="Left" TextAlignment="Center" Margin="48,24,0,0">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <MatrixTransform Matrix="1.33333,0,0,1.33333,-0.121282,0.200047"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+        			<Run Foreground="#FF656565" Text="Black Heart Logo Converse Edition"/>
+                </TextBlock>
+            </Grid>
+        </Viewbox>
+        <Grid Height="1696" Margin="511,214,92,0" VerticalAlignment="Top">
+            <TextBlock x:Name="ItemLists" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Item List" Foreground="White" VerticalAlignment="Top" Width="512" TextAlignment="Center" FontSize="53.333" Height="85"/>
+            <TextBlock x:Name="Brought" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Purchased" Foreground="Wheat" VerticalAlignment="Bottom" Margin="143,0,188,1372" Width="146" TextAlignment="Center" FontSize="26.667"/>
+            <TextBlock x:Name="Loved" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Favorite" Foreground="Wheat" VerticalAlignment="Bottom" Margin="143,0,188,832" Width="146" TextAlignment="Center" FontSize="26.667"/>
 
-        <TextBlock x:Name="ItemLists" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Item List" Foreground="White" VerticalAlignment="Top" Margin="624,214,240,0" Width="512" TextAlignment="Center" FontSize="53.333" Height="85"/>
 
-        <TextBlock x:Name="Brought" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Purchased" Foreground="Wheat" VerticalAlignment="Top" Margin="676,486,258,0" Width="146" TextAlignment="Center" FontSize="26.667"/>
 
-        <TextBlock x:Name="Loved" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Favorite" Foreground="Wheat" VerticalAlignment="Top" Margin="676,718,258,0" Width="146" TextAlignment="Center" FontSize="26.667"/>
+
+
+
+
+        </Grid>
+        <Path x:Name="bg_Copy1" Width="184.357" Stretch="Fill" Fill="#FFFFFFFF" Data="M 413.44,71.3609L 413.44,338.881L 239.36,338.881L 239.36,71.3609L 413.44,71.3609 Z " HorizontalAlignment="Left" Margin="157.643,885.293,0,767.187" UseLayoutRounding="False" d:LayoutOverrides="TopPosition, BottomPosition"/>
+        <Viewbox x:Name="roll_Copy1" Width="151" Height="25.9208" HorizontalAlignment="Left" Margin="175,889,0,0" VerticalAlignment="Top">
+            <Canvas Width="143.032" Height="25.9208">
+                <Path x:Name="icon2" Width="29.4324" Height="25.9198" Canvas.Left="113.6" Canvas.Top="0" Stretch="Fill" Fill="#FFA0A0A0" Data="F1 M 137.514,9.25708L 141.193,9.25711C 141.193,9.25711 143.032,9.32352 143.032,11.1085C 143.032,12.8934 139.353,24.0685 139.353,24.0685C 139.353,24.0685 138.651,25.9198 137.514,25.9198L 119.118,25.9198C 117.924,25.9198 117.279,24.0685 117.279,24.0685C 117.279,24.0685 113.6,12.9022 113.6,11.1085C 113.6,9.31485 115.439,9.25711 115.439,9.25711L 119.118,9.25711L 128.316,0L 137.514,9.25708 Z M 122.797,9.25711L 133.835,9.25717L 128.316,3.70285L 122.797,9.25711 Z "/>
+                <Path x:Name="heart2" Width="26.2332" Height="23.0399" Canvas.Left="0" Canvas.Top="2.88095" Stretch="Fill" Fill="#FFA0A0A0" Data="M 26.2332,9.46375C 26.2332,5.828 23.2971,2.88095 19.6751,2.88095C 16.0528,2.88098 13.1168,5.93372 13.1168,9.46378C 13.1168,5.82803 10.1804,2.88098 6.55844,2.88098C 2.93637,2.88098 0,5.82803 0,9.46378C 0,16.0326 13.1168,25.9208 13.1168,25.9208C 13.1168,25.9208 26.2332,16.0218 26.2332,9.46375 Z "/>
+            </Canvas>
+        </Viewbox>
+        <Image x:Name="img_Copy1" Source="ms-appx:///Resources/Clothing/skirt.jpg" Margin="-52,732,0,661" HorizontalAlignment="Left" Width="338">
+            <Image.RenderTransform>
+                <CompositeTransform ScaleY="0.32" ScaleX="0.32" TranslateX="249.27999877929688" TranslateY="177.281005859375"/>
+            </Image.RenderTransform>
+        </Image>
+        <Viewbox HorizontalAlignment="Left" Height="44" Margin="158,0,0,783" VerticalAlignment="Bottom" Width="184">
+            <Grid Height="50" Width="311">
+                <TextBlock x:Name="Comme_des_Garçons_Play2" TextAlignment="Center" FontFamily="Segoe UI" FontSize="13.333" VerticalAlignment="Top" HorizontalAlignment="Left" Width="311" Margin="-63,5,0,0">
+                    <TextBlock.RenderTransform>
+                        <CompositeTransform ScaleY="1.333" ScaleX="1.333" TranslateX="16.039699554443359" TranslateY="-6.7647800445556641"/>
+                    </TextBlock.RenderTransform>
+        			<Run Text="COMME DES GARÇONS PLAY" Foreground="#FF333333"/>
+                </TextBlock>
+                <TextBlock x:Name="Black_Heart_Logo_Converse_Edition2" FontFamily="Segoe UI" FontSize="10.667" VerticalAlignment="Top" HorizontalAlignment="Left" TextAlignment="Center" Margin="48,24,0,0">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <MatrixTransform Matrix="1.33333,0,0,1.33333,-0.121282,0.200047"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+        			<Run Foreground="#FF656565" Text="Black Heart Logo Converse Edition"/>
+                </TextBlock>
+            </Grid>
+        </Viewbox>
+
+
+        <Path x:Name="bg_Copy2" Width="184.357" Stretch="Fill" Fill="#FFFFFFFF" Data="M 413.44,71.3609L 413.44,338.881L 239.36,338.881L 239.36,71.3609L 413.44,71.3609 Z " HorizontalAlignment="Left" Margin="10.603,0,0,399.667" UseLayoutRounding="False" Height="251.52" VerticalAlignment="Bottom"/>
+        <Viewbox x:Name="roll_Copy2" Width="151" Height="25.9208" HorizontalAlignment="Left" Margin="27,0,0,722" VerticalAlignment="Bottom">
+            <Canvas Width="162" Height="25.9208">
+                <Path x:Name="icon3" Width="29.4324" Height="25.9198" Canvas.Left="117.816" Canvas.Top="121.567" Stretch="Fill" Fill="#FFA0A0A0" Data="F1 M 137.514,9.25708L 141.193,9.25711C 141.193,9.25711 143.032,9.32352 143.032,11.1085C 143.032,12.8934 139.353,24.0685 139.353,24.0685C 139.353,24.0685 138.651,25.9198 137.514,25.9198L 119.118,25.9198C 117.924,25.9198 117.279,24.0685 117.279,24.0685C 117.279,24.0685 113.6,12.9022 113.6,11.1085C 113.6,9.31485 115.439,9.25711 115.439,9.25711L 119.118,9.25711L 128.316,0L 137.514,9.25708 Z M 122.797,9.25711L 133.835,9.25717L 128.316,3.70285L 122.797,9.25711 Z " UseLayoutRounding="False"/>
+                <Path x:Name="heart3" Width="26.2332" Height="23.0399" Canvas.Left="-1.884" Canvas.Top="121.567" Stretch="Fill" Fill="#FFA0A0A0" Data="M 26.2332,9.46375C 26.2332,5.828 23.2971,2.88095 19.6751,2.88095C 16.0528,2.88098 13.1168,5.93372 13.1168,9.46378C 13.1168,5.82803 10.1804,2.88098 6.55844,2.88098C 2.93637,2.88098 0,5.82803 0,9.46378C 0,16.0326 13.1168,25.9208 13.1168,25.9208C 13.1168,25.9208 26.2332,16.0218 26.2332,9.46375 Z " UseLayoutRounding="False"/>
+            </Canvas>
+        </Viewbox>
+        <Image x:Name="img_Copy2" Source="ms-appx:///Resources/Clothing/dress.jpg" Margin="-213,0,0,337" HorizontalAlignment="Left" Height="444" VerticalAlignment="Bottom" Width="420">
+            <Image.RenderTransform>
+                <CompositeTransform ScaleY="0.32" ScaleX="0.32" TranslateX="249.27999877929688" TranslateY="177.281005859375"/>
+            </Image.RenderTransform>
+        </Image>
+        <Viewbox HorizontalAlignment="Left" Height="44" Margin="10,0,0,400" VerticalAlignment="Bottom" Width="184">
+            <Grid Height="50" Width="311">
+                <TextBlock x:Name="Comme_des_Garçons_Play3" TextAlignment="Center" FontFamily="Segoe UI" FontSize="13.333" VerticalAlignment="Top" HorizontalAlignment="Left" Width="311" Margin="-63,5,0,0">
+                    <TextBlock.RenderTransform>
+                        <CompositeTransform ScaleY="1.333" ScaleX="1.333" TranslateX="16.039699554443359" TranslateY="-6.7647800445556641"/>
+                    </TextBlock.RenderTransform>
+        			<Run Text="COMME DES GARÇONS PLAY" Foreground="#FF333333"/>
+                </TextBlock>
+                <TextBlock x:Name="Black_Heart_Logo_Converse_Edition3" FontFamily="Segoe UI" FontSize="10.667" VerticalAlignment="Top" HorizontalAlignment="Left" TextAlignment="Center" Margin="48,24,0,0">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <MatrixTransform Matrix="1.33333,0,0,1.33333,-0.121282,0.200047"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+        			<Run Foreground="#FF656565" Text="Black Heart Logo Converse Edition"/>
+                </TextBlock>
+            </Grid>
+        </Viewbox>
 
 
 

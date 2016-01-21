@@ -22,7 +22,8 @@
                 Text="{Binding Path=CurrentTime, FallbackValue=Time will be shown here}" Foreground="White" 
                 />
         </StackPanel>
-        <Ellipse HorizontalAlignment="Left" Height="240" Margin="141,119,0,0" VerticalAlignment="Top" Width="202">
+        
+        <Ellipse HorizontalAlignment="Left" Height="150" Margin="141,189,0,0" VerticalAlignment="Top" Width="144">
             <Ellipse.Fill>
                 <ImageBrush>
                     <ImageBrush.ImageSource>
@@ -32,9 +33,9 @@
                 </ImageBrush>
             </Ellipse.Fill>
         </Ellipse>
-        
-        
-        <Ellipse HorizontalAlignment="Left" Height="240" Margin="597,119,0,0" VerticalAlignment="Top" Width="202">
+
+
+        <Ellipse HorizontalAlignment="Left" Height="150" Margin="657,189,0,0" VerticalAlignment="Top" Width="142">
             <Ellipse.Fill>
                 <ImageBrush>
                     <ImageBrush.ImageSource>
@@ -45,7 +46,7 @@
             </Ellipse.Fill>
         </Ellipse>
 
-        <Ellipse HorizontalAlignment="Left" Height="240" Margin="141,449,0,0" VerticalAlignment="Top" Width="202">
+        <Ellipse HorizontalAlignment="Left" Height="156" Margin="141,449,0,0" VerticalAlignment="Top" Width="144">
             <Ellipse.Fill>
                 <ImageBrush>
                     <ImageBrush.ImageSource>
@@ -56,7 +57,7 @@
             </Ellipse.Fill>
         </Ellipse>
 
-        <Ellipse HorizontalAlignment="Left" Height="240" Margin="597,449,0,0" VerticalAlignment="Top" Width="202">
+        <Ellipse HorizontalAlignment="Left" Height="156" Margin="661,449,0,0" VerticalAlignment="Top" Width="148">
             <Ellipse.Fill>
                 <ImageBrush>
                     <ImageBrush.ImageSource>
@@ -67,7 +68,7 @@
             </Ellipse.Fill>
         </Ellipse>
 
-        <Ellipse HorizontalAlignment="Left" Height="240" Margin="141,767,0,0" VerticalAlignment="Top" Width="202">
+        <Ellipse HorizontalAlignment="Left" Height="152" Margin="141,767,0,0" VerticalAlignment="Top" Width="144">
             <Ellipse.Fill>
                 <ImageBrush>
                     <ImageBrush.ImageSource>
@@ -78,7 +79,7 @@
             </Ellipse.Fill>
         </Ellipse>
 
-        <Ellipse HorizontalAlignment="Left" Height="240" Margin="597,767,0,0" VerticalAlignment="Top" Width="202">
+        <Ellipse HorizontalAlignment="Left" Height="152" Margin="661,767,0,0" VerticalAlignment="Top" Width="138">
             <Ellipse.Fill>
                 <ImageBrush>
                     <ImageBrush.ImageSource>
@@ -88,5 +89,7 @@
                 </ImageBrush>
             </Ellipse.Fill>
         </Ellipse>
+        
+        
     </Grid>
 </Page>
