@@ -7,10 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Height="1920" Width="1080"
+    xmlns:News="using:Matilda.Mirror.GUI.News"
     DataContext="{StaticResource clockViewModel}">
 
     <Grid Background="Black">
-        <StackPanel VerticalAlignment="Top">
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Stretch">
             <TextBlock x:Name="CurrentTime"
                 HorizontalAlignment="Center"
                 FontSize="30"
@@ -21,9 +22,10 @@
                 FontSize="30"
                 Text="{Binding Path=CurrentTime, FallbackValue=Time will be shown here}" Foreground="White" 
                 />
+            <News:NewsViewControl Margin="10,20,0,0" HorizontalAlignment="Left" Width="350" Height="400"/>
         </StackPanel>
-
-        <StackPanel Margin="23,187,0,0" HorizontalAlignment="Left" Width="485" Height="408" VerticalAlignment="Top">
+      
+        <StackPanel Margin="23,187,0,0" Visibility="Collapsed" HorizontalAlignment="Left" Width="485" Height="408" VerticalAlignment="Top">
             <TextBlock x:Name="Notifications"
                 HorizontalAlignment="Left"
                 FontSize="40"
