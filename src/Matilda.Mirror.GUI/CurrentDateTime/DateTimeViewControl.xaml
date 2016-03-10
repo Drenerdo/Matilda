@@ -1,0 +1,19 @@
+﻿<UserControl
+    x:Class="Matilda.Mirror.GUI.CurrentDateTime.DateTimeViewControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Matilda.Mirror.GUI.DateTime"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+  
+    DataContext="{StaticResource dateTimeViewModel}">
+
+    <Grid>
+        <StackPanel >
+            <TextBlock Text="{Binding CurrentTime}" HorizontalAlignment="Center"  Foreground="White" FontSize="45"/>
+            <TextBlock Text="{Binding CurrentWeekDay}" HorizontalAlignment="Center" FontSize="15" Foreground="White"/>
+            <TextBlock Text="{Binding CurrentDate}" HorizontalAlignment="Center"  FontSize="20" Foreground="White"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
