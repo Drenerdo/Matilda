@@ -1,0 +1,38 @@
+﻿<UserControl
+    x:Class="Matilda.Mirror.GUI.New_Weather.WeatherViewControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Matilda.Mirror.GUI.New_Weather"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DataContext="{StaticResource newWeatherViewModel}"
+   >
+    <UserControl.Resources>
+    
+    </UserControl.Resources>
+    <Grid Width="200" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="7-DAYS WEATHER FORECAST" Foreground="White" FontSize="18" Margin="0,0,0,5"/>
+        <Rectangle Fill="White" Height="1" VerticalAlignment="Bottom"/>
+        <GridView Grid.Row="1" ItemsSource="{Binding WeatherList}" IsItemClickEnabled="False" SelectionMode="None">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="10,15,0,0">
+                        <StackPanel HorizontalAlignment="Center" >
+                            <Image Source="{Binding icon_url}" Height="30" Width="30"/>
+                            <TextBlock Text="{Binding date.weekday_short}" Foreground="White" HorizontalAlignment="Center"/>
+                            <TextBlock Text="{Binding high.fahrenheit}"  Foreground="White" HorizontalAlignment="Center"/>
+                            <TextBlock Text="{Binding low.fahrenheit}"   Foreground="Blue" HorizontalAlignment="Center"/>
+                            <TextBlock Text="{Binding conditions}" ToolTipService.ToolTip="{Binding conditions}" Height="40" TextTrimming="CharacterEllipsis" Width="50" HorizontalAlignment="Center" Foreground="White" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+           
+        </GridView>
+    </Grid>
+</UserControl>
