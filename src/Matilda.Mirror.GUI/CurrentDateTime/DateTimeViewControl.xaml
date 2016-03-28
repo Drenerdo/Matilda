@@ -11,9 +11,9 @@
 
     <Grid>
         <StackPanel >
-            <TextBlock Text="{Binding CurrentTime}" HorizontalAlignment="Center"  Foreground="White" FontSize="45"/>
-            <TextBlock Text="{Binding CurrentWeekDay}" HorizontalAlignment="Center" FontSize="15" Foreground="White"/>
-            <TextBlock Text="{Binding CurrentDate}" HorizontalAlignment="Center"  FontSize="20" Foreground="White"/>
+            <TextBlock Text="{Binding CurrentTime}" HorizontalAlignment="Center"  Foreground="{StaticResource ForegroundColorTheme}" FontSize="45"/>
+            <TextBlock Text="{Binding CurrentWeekDay}" HorizontalAlignment="Center" FontSize="15" Foreground="{StaticResource ForegroundColorTheme}"/>
+            <TextBlock Text="{Binding CurrentDate}" HorizontalAlignment="Center"  FontSize="20" Foreground="{StaticResource ForegroundColorTheme}"/>
         </StackPanel>
     </Grid>
 </UserControl>
