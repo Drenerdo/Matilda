@@ -4,6 +4,7 @@ using Matilda.Mirror.GUI.Closet;
 using Matilda.Mirror.GUI.Controllers;
 using Matilda.Mirror.GUI.Transit;
 using Matilda.Mirror.GUI.Weather;
+using Matilda.Mirror.GUI.News;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -50,9 +51,10 @@ namespace Matilda.Mirror.GUI
 
         private List<Type> availableScreens = new List<Type>()
         {
+            
             typeof(ClockView),
-            //typeof(WeatherTodayView),
-            //typeof(WeatherThisWeekView),
+           // typeof(WeatherTodayView),
+           // typeof(WeatherThisWeekView),
             //typeof(TransitView),
             typeof(ClothingView),
             typeof(ClothingTryingOnControl),
@@ -122,7 +124,7 @@ namespace Matilda.Mirror.GUI
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                rootFrame.Navigate(typeof(ClockView), e.Arguments);
+                rootFrame.Navigate(typeof(ConsumerDashBoard.DashBoardPage), e.Arguments);
             }
             // Ensure the current window is active
             Window.Current.Activate();
