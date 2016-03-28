@@ -14,7 +14,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="CURRENT TRAFFIC" FontSize="18" Foreground="White" Margin="0,0,0,5"/>
+        <TextBlock Text="CURRENT TRAFFIC" FontSize="18" Foreground="{StaticResource ForegroundColorTheme}" Margin="0,0,0,5"/>
         <Rectangle Fill="White" Height="1" VerticalAlignment="Bottom"/>
        
         <maps:MapControl x:Name="UserMapControl" Grid.Row="1"
