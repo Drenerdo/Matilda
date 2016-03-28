@@ -11,23 +11,23 @@
     <UserControl.Resources>
     
     </UserControl.Resources>
-    <Grid Width="200" >
+    <Grid Width="220" >
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="7-DAYS WEATHER FORECAST" Foreground="White" FontSize="18" Margin="0,0,0,5"/>
+        <TextBlock Text="7-DAYS WEATHER FORECAST" Foreground="{StaticResource ForegroundColorTheme}" FontSize="17" Margin="0,0,0,5"/>
         <Rectangle Fill="White" Height="1" VerticalAlignment="Bottom"/>
         <GridView Grid.Row="1" ItemsSource="{Binding WeatherList}" IsItemClickEnabled="False" SelectionMode="None">
             <GridView.ItemTemplate>
                 <DataTemplate>
-                    <Grid Margin="10,15,0,0">
+                    <Grid Margin="12,15,0,0" >
                         <StackPanel HorizontalAlignment="Center" >
                             <Image Source="{Binding icon_url}" Height="30" Width="30"/>
-                            <TextBlock Text="{Binding date.weekday_short}" Foreground="White" HorizontalAlignment="Center"/>
-                            <TextBlock Text="{Binding high.fahrenheit}"  Foreground="White" HorizontalAlignment="Center"/>
+                            <TextBlock Text="{Binding date.weekday_short}" Foreground="{StaticResource ForegroundColorTheme}" HorizontalAlignment="Center"/>
+                            <TextBlock Text="{Binding high.fahrenheit}"  Foreground="{StaticResource ForegroundColorTheme}" HorizontalAlignment="Center"/>
                             <TextBlock Text="{Binding low.fahrenheit}"   Foreground="Blue" HorizontalAlignment="Center"/>
-                            <TextBlock Text="{Binding conditions}" ToolTipService.ToolTip="{Binding conditions}" Height="40" TextTrimming="CharacterEllipsis" Width="50" HorizontalAlignment="Center" Foreground="White" TextWrapping="Wrap"/>
+                            <TextBlock Text="{Binding conditions}" ToolTipService.ToolTip="{Binding conditions}" Height="40" TextTrimming="CharacterEllipsis"  Width="50" HorizontalAlignment="Center" Foreground="{StaticResource ForegroundColorTheme}" TextWrapping="Wrap"/>
                         </StackPanel>
                     </Grid>
                 </DataTemplate>
