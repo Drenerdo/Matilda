@@ -22,57 +22,8 @@
                 Text="{Binding Path=CurrentTime, FallbackValue=Time will be shown here}" Foreground="White" 
                 />
         </StackPanel>
-
-        <Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="progress_1" Height="400" Canvas.Left="0" Canvas.Top="0" Margin="48,192,593,1328">
-            <Path x:Name="Shape_1" Width="314" Height="314" Canvas.Left="110" Canvas.Top="46" Stretch="Fill" Fill="#FF0033FF" Data="M 267,46C 353.709,46 424,116.291 424,203C 424,289.709 353.709,360 267,360C 180.291,360 110,289.709 110,203C 110,116.291 180.291,46 267,46 Z "/>
-            <Path x:Name="Shape_1_copy_2" Width="280.667" Height="280.667" Canvas.Left="126.667" Canvas.Top="62.6667" Stretch="Fill" Data="M 267,62.6667C 344.504,62.6667 407.333,125.496 407.333,203C 407.333,280.504 344.504,343.333 267,343.333C 189.496,343.333 126.667,280.504 126.667,203C 126.667,125.496 189.496,62.6667 267,62.6667 Z ">
-                <Path.Fill>
-                    <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Resources/Amentities/Facewipes.jpg"/>
-                </Path.Fill>
-            </Path>
-        </Canvas>
-        <Canvas x:Name="progress_1_Copy" Height="400" Margin="595,192,46,1328">
-            <Path x:Name="Shape_2" Width="314" Height="314" Canvas.Left="110" Canvas.Top="46" Stretch="Fill" Fill="#FF0033FF" Data="M 267,46C 353.709,46 424,116.291 424,203C 424,289.709 353.709,360 267,360C 180.291,360 110,289.709 110,203C 110,116.291 180.291,46 267,46 Z "/>
-            <Path x:Name="Shape_1_copy_1" Width="280.667" Height="280.667" Canvas.Left="126.667" Canvas.Top="62.6667" Stretch="Fill" Data="M 267,62.6667C 344.504,62.6667 407.333,125.496 407.333,203C 407.333,280.504 344.504,343.333 267,343.333C 189.496,343.333 126.667,280.504 126.667,203C 126.667,125.496 189.496,62.6667 267,62.6667 Z ">
-                <Path.Fill>
-                    <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Resources/Amentities/cottonballs.jpg"/>
-                </Path.Fill>
-            </Path>
-        </Canvas>
-        <Canvas x:Name="progress_1_Copy1" Height="400" Margin="48,592,593,928">
-            <Path x:Name="Shape_3" Width="314" Height="314" Canvas.Left="110" Canvas.Top="46" Stretch="Fill" Fill="#FF0033FF" Data="M 267,46C 353.709,46 424,116.291 424,203C 424,289.709 353.709,360 267,360C 180.291,360 110,289.709 110,203C 110,116.291 180.291,46 267,46 Z "/>
-            <Path x:Name="Shape_1_copy_3" Width="280.667" Height="280.667" Canvas.Left="126.667" Canvas.Top="62.6667" Stretch="Fill" Data="M 267,62.6667C 344.504,62.6667 407.333,125.496 407.333,203C 407.333,280.504 344.504,343.333 267,343.333C 189.496,343.333 126.667,280.504 126.667,203C 126.667,125.496 189.496,62.6667 267,62.6667 Z ">
-                <Path.Fill>
-                    <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Resources/Amentities/slippers.jpg"/>
-                </Path.Fill>
-            </Path>
-        </Canvas>
-        <Canvas x:Name="progress_1_Copy2" Height="400" Margin="595,597,46,923">
-            <Path x:Name="Shape_4" Width="314" Height="314" Canvas.Left="110" Canvas.Top="46" Stretch="Fill" Fill="#FF0533EA" Data="M 267,46C 353.709,46 424,116.291 424,203C 424,289.709 353.709,360 267,360C 180.291,360 110,289.709 110,203C 110,116.291 180.291,46 267,46 Z "/>
-            <Path x:Name="Shape_1_copy_4" Width="280.667" Height="280.667" Canvas.Left="126.667" Canvas.Top="62.6667" Stretch="Fill" Data="M 267,62.6667C 344.504,62.6667 407.333,125.496 407.333,203C 407.333,280.504 344.504,343.333 267,343.333C 189.496,343.333 126.667,280.504 126.667,203C 126.667,125.496 189.496,62.6667 267,62.6667 Z ">
-                <Path.Fill>
-                    <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Resources/Amentities/linens.gif"/>
-                </Path.Fill>
-            </Path>
-        </Canvas>
-        <Canvas x:Name="progress_1_Copy3" Height="400" Margin="595,997,46,523">
-            <Path x:Name="Shape_5" Width="314" Height="314" Canvas.Left="110" Canvas.Top="46" Stretch="Fill" Fill="#FF0033FF" Data="M 267,46C 353.709,46 424,116.291 424,203C 424,289.709 353.709,360 267,360C 180.291,360 110,289.709 110,203C 110,116.291 180.291,46 267,46 Z "/>
-            <Path x:Name="Shape_1_copy_5" Width="280.667" Height="280.667" Canvas.Left="126.667" Canvas.Top="62.6667" Stretch="Fill" Data="M 267,62.6667C 344.504,62.6667 407.333,125.496 407.333,203C 407.333,280.504 344.504,343.333 267,343.333C 189.496,343.333 126.667,280.504 126.667,203C 126.667,125.496 189.496,62.6667 267,62.6667 Z ">
-                <Path.Fill>
-                    <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Resources/Amentities/book.jpg"/>
-                </Path.Fill>
-            </Path>
-        </Canvas>
-        <Canvas x:Name="progress_1_Copy4" Height="400" Margin="48,997,593,523">
-            <Path x:Name="Shape_6" Width="314" Height="314" Canvas.Left="110" Canvas.Top="46" Stretch="Fill" Fill="#FF0033FF" Data="M 267,46C 353.709,46 424,116.291 424,203C 424,289.709 353.709,360 267,360C 180.291,360 110,289.709 110,203C 110,116.291 180.291,46 267,46 Z "/>
-            <Path x:Name="Shape_1_copy_6" Width="280.667" Height="280.667" Canvas.Left="126.667" Canvas.Top="62.6667" Stretch="Fill" Data="M 267,62.6667C 344.504,62.6667 407.333,125.496 407.333,203C 407.333,280.504 344.504,343.333 267,343.333C 189.496,343.333 126.667,280.504 126.667,203C 126.667,125.496 189.496,62.6667 267,62.6667 Z ">
-                <Path.Fill>
-                    <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Resources/Amentities/bathrobe.jpg"/>
-                </Path.Fill>
-            </Path>
-        </Canvas>
-
-        <!--<Ellipse HorizontalAlignment="Left" Height="150" Margin="141,189,0,0" VerticalAlignment="Top" Width="144">
+        
+        <Ellipse HorizontalAlignment="Left" Height="150" Margin="141,189,0,0" VerticalAlignment="Top" Width="144">
             <Ellipse.Fill>
                 <ImageBrush>
                     <ImageBrush.ImageSource>
@@ -137,8 +88,8 @@
                     </ImageBrush.ImageSource>
                 </ImageBrush>
             </Ellipse.Fill>
-        </Ellipse>-->
-
-
+        </Ellipse>
+        
+        
     </Grid>
 </Page>
