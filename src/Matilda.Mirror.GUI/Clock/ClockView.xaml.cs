@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,16 +25,6 @@ namespace Matilda.Mirror.GUI.Clock
         public ClockView()
         {
             this.InitializeComponent();
-        }
-
-        private void Amentities_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Amentities.AmentitiesView));
-        }
-
-        private void closet_btn_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Closet.ClothingView));
         }
     }
 }

@@ -5,11 +5,9 @@
     xmlns:local="using:Matilda.Mirror.GUI"
     xmlns:clock="using:Matilda.Mirror.GUI.Clock"
     xmlns:transit="using:Matilda.Mirror.GUI.Transit"
-    xmlns:weather="using:Matilda.Mirror.GUI.Weather"
     xmlns:closet="using:Matilda.Mirror.GUI.Closet"
      xmlns:news="using:Matilda.Mirror.GUI.News"
      xmlns:newWeather="using:Matilda.Mirror.GUI.New_Weather"
-    xmlns:datetime="using:Matilda.Mirror.GUI.CurrentDateTime"
      xmlns:music="using:Matilda.Mirror.GUI.Music"
     RequestedTheme="Light">
     <Application.Resources>
@@ -21,11 +19,8 @@
        
         <clock:ClockViewModel x:Key="clockViewModel"/>
         <transit:TransitViewModel x:Key="transitViewModel"/>
-        <weather:WeatherThisWeekViewModel x:Key="weatherThisWeekViewModel"/>
-        <weather:WeatherTodayViewModel x:Key="weatherTodayViewModel"/>
         <news:NewsViewModel x:Key="newsViewModel"/>
         <newWeather:NewWeatherViewModel x:Key="newWeatherViewModel"/>
-        <datetime:DateTimeViewModel x:Key="dateTimeViewModel"/>
         <music:MusicViewModel x:Key="musicViewModel"/>
         <!--<closet:ClothingViewModel x:Key="ClothingViewModel"/>-->
         <SolidColorBrush x:Key="ForegroundColorTheme" Color="White"/>

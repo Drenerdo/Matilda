@@ -15,7 +15,6 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <currentdatetime:DateTimeViewControl HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <currentweather:CurrentWeatherControl HorizontalAlignment="Right" Margin="0,0,10,0"/>
         <musiccontrol:MusicViewControl Grid.Row="1" Margin="10,50,0,0"/>
     </Grid>

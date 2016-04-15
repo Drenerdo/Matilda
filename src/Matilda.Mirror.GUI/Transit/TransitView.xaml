@@ -6,10 +6,10 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    DataContext="{StaticResource transitViewModel}">
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    DataContext="{StaticResource transitViewModel}" Height="220.786">
+    <Grid>
         <ListView HorizontalAlignment="Stretch" Margin="10" VerticalAlignment="Stretch"
-                  ItemsSource="{Binding Path=Lines}" ScrollViewer.VerticalScrollMode="Enabled" 
+                  ItemsSource="{Binding Path=Lines}" Foreground="White" ScrollViewer.VerticalScrollMode="Enabled" 
                                          ScrollViewer.HorizontalScrollMode="Disabled">
 
             <ListView.ItemTemplate>
@@ -21,16 +21,16 @@
                             <ColumnDefinition Width="4*"/>
                         </Grid.ColumnDefinitions>
 
-                        <TextBlock Grid.Column="0" Text="{Binding Path=RouteName}"/>
-                        <TextBlock Grid.Column="1" Text="{Binding Path=StopName}"/>
+                        <TextBlock Grid.Column="0" Text="{Binding Path=RouteName}" Foreground="White"/>
+                        <TextBlock Grid.Column="1" Text="{Binding Path=StopName}" Foreground="White"/>
 
                         <ListView Grid.Column="2" HorizontalAlignment="Stretch" Margin="10" Height="50"
-                                  ItemsSource="{Binding Path=Arrivals}" ScrollViewer.VerticalScrollMode="Disabled" ScrollViewer.HorizontalScrollMode="Enabled">
+                                  ItemsSource="{Binding Path=Arrivals}" Foreground="White" ScrollViewer.VerticalScrollMode="Disabled" ScrollViewer.HorizontalScrollMode="Enabled">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <StackPanel Width="100">
-                                        <TextBlock Text="{Binding Path=WhenINeedToLeave}"/>
-                                        <TextBlock Text="{Binding Path=ArrivalTime}"/>
+                                        <TextBlock Text="{Binding Path=WhenINeedToLeave}" Foreground="White"/>
+                                        <TextBlock Text="{Binding Path=ArrivalTime}" Foreground="White"/>
                                     </StackPanel>
                                 </DataTemplate>
                             </ListView.ItemTemplate>

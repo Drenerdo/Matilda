@@ -92,6 +92,48 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\chancedust.png" />
+    <Content Include="Images\chancefog.png" />
+    <Content Include="Images\chancehail.png" />
+    <Content Include="Images\chanceicy.png" />
+    <Content Include="Images\chancerain.png" />
+    <Content Include="Images\chancesleet.png" />
+    <Content Include="Images\chancesnow.png" />
+    <Content Include="Images\chancetstorms.png" />
+    <Content Include="Images\clear.png" />
+    <Content Include="Images\cloudy.png" />
+    <Content Include="Images\dust.png" />
+    <Content Include="Images\fog.png" />
+    <Content Include="Images\hail.png" />
+    <Content Include="Images\icy.png" />
+    <Content Include="Images\moon.png" />
+    <Content Include="Images\mostlycloudy.png" />
+    <Content Include="Images\MusicPlayer Icons\homescreen.png" />
+    <Content Include="Images\MusicPlayer Icons\musicicon.jpg" />
+    <Content Include="Images\MusicPlayer Icons\pause.png" />
+    <Content Include="Images\MusicPlayer Icons\play.png" />
+    <Content Include="Images\nt_chanceicy.png" />
+    <Content Include="Images\nt_chancerain.png" />
+    <Content Include="Images\nt_chancesnow.png" />
+    <Content Include="Images\nt_clear.png" />
+    <Content Include="Images\nt_cloudy.png" />
+    <Content Include="Images\nt_fog.png" />
+    <Content Include="Images\nt_icy.png" />
+    <Content Include="Images\nt_moon.png" />
+    <Content Include="Images\nt_mostlycloudy.png" />
+    <Content Include="Images\nt_partlycloudy.png" />
+    <Content Include="Images\nt_rain.png" />
+    <Content Include="Images\nt_snow.png" />
+    <Content Include="Images\nt_tstorms.png" />
+    <Content Include="Images\other.png" />
+    <Content Include="Images\partlycloudy.png" />
+    <Content Include="Images\rain.png" />
+    <Content Include="Images\rainy-weather.png" />
+    <Content Include="Images\sleet.png" />
+    <Content Include="Images\snow.png" />
+    <Content Include="Images\snowstorm.png" />
+    <Content Include="Images\sun.png" />
+    <Content Include="Images\tstorms.png" />
     <Content Include="Resources\Amentities\bathrobe.jpg" />
     <Content Include="Resources\Amentities\book.jpg" />
     <Content Include="Resources\Amentities\cottonballs.jpg" />
@@ -146,10 +188,43 @@
     <Compile Include="Closet\PriceUnit.cs" />
     <Compile Include="Closet\ProcessState.cs" />
     <Compile Include="Closet\Size.cs" />
+    <Compile Include="ConsumerDashBoard\DashBoardPage.xaml.cs">
+      <DependentUpon>DashBoardPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\AmentitiesServicesController.cs" />
     <Compile Include="Controllers\DataServicesController.cs" />
     <Compile Include="Controllers\NavigationController.cs" />
     <Compile Include="Controllers\TimerController.cs" />
+    <Compile Include="Map\MapViewControl.xaml.cs">
+      <DependentUpon>MapViewControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Music\CompleteMusicViewControl.xaml.cs">
+      <DependentUpon>CompleteMusicViewControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Music\CurrentTrackViewControl.xaml.cs">
+      <DependentUpon>CurrentTrackViewControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Music\MusicModel.cs" />
+    <Compile Include="Music\MusicPage.xaml.cs">
+      <DependentUpon>MusicPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Music\MusicViewControl.xaml.cs">
+      <DependentUpon>MusicViewControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Music\MusicViewModel.cs" />
+    <Compile Include="New Weather\CurrentWeatherControl.xaml.cs">
+      <DependentUpon>CurrentWeatherControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="New Weather\NewWeatherModel.cs" />
+    <Compile Include="New Weather\NewWeatherViewModel.cs" />
+    <Compile Include="New Weather\WeatherViewControl.xaml.cs">
+      <DependentUpon>WeatherViewControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="News\NewsModel.cs" />
+    <Compile Include="News\NewsViewControl.xaml.cs">
+      <DependentUpon>NewsViewControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="News\NewsViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropertyChangedBase.cs" />
     <Compile Include="Transit\ArrivalViewModel.cs" />
@@ -161,21 +236,6 @@
       <DependentUpon>TransitView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Transit\TransitViewModel.cs" />
-    <Compile Include="Weather\DailyForecastViewModel.cs" />
-    <Compile Include="Weather\Helpers.cs" />
-    <Compile Include="Weather\HourlyForecastViewModel.cs" />
-    <Compile Include="Weather\WeatherDetailsModel.cs" />
-    <Compile Include="Weather\WeatherModel.cs" />
-    <Compile Include="Weather\WeatherModel_fake.cs" />
-    <Compile Include="Weather\WeatherModel_wunderground.cs" />
-    <Compile Include="Weather\WeatherThisWeekView.xaml.cs">
-      <DependentUpon>WeatherThisWeekView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Weather\WeatherThisWeekViewModel.cs" />
-    <Compile Include="Weather\WeatherTodayView.xaml.cs">
-      <DependentUpon>WeatherTodayView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Weather\WeatherTodayViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -214,22 +274,48 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ConsumerDashBoard\DashBoardPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Map\MapViewControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Music\CompleteMusicViewControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Music\CurrentTrackViewControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Music\MusicPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Music\MusicViewControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="New Weather\CurrentWeatherControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="New Weather\WeatherViewControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="News\NewsViewControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Transit\TransitView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Weather\WeatherThisWeekView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Weather\WeatherTodayView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Music\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

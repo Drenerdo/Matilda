@@ -3,7 +3,6 @@ using Matilda.Mirror.GUI.Clock;
 using Matilda.Mirror.GUI.Closet;
 using Matilda.Mirror.GUI.Controllers;
 using Matilda.Mirror.GUI.Transit;
-using Matilda.Mirror.GUI.Weather;
 using Matilda.Mirror.GUI.News;
 using System;
 using System.Collections.Generic;
@@ -87,11 +86,6 @@ namespace Matilda.Mirror.GUI
 
             var amentitiesmodel = new AmentitiesModel();
 
-            var weatherModel = new WeatherModel_wunderground();
-            await weatherModel.Update();
-            TimerController.RegisterModel(weatherModel);
-            (Resources["weatherThisWeekViewModel"] as WeatherThisWeekViewModel).Initialize(weatherModel);
-            (Resources["weatherTodayViewModel"] as WeatherTodayViewModel).Initialize(weatherModel);
 
             var transitModel = new TransitModel_fake();
             await transitModel.Update();

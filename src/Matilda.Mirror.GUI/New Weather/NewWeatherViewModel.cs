@@ -93,8 +93,7 @@ namespace Matilda.Mirror.GUI.New_Weather
                 }
 
 
-                // string uri = string.Format("http://api.worldweatheronline.com/free/v1/weather.ashx?q={0}&format={1}&num_of_days={2}&key={3}", lonlati, "json", 5, "durpb96x9r9vf68b7m9ds2f6");
-                string uri = "http://api.wunderground.com/api/49b92ea52ed55fe0/forecast10day/q/" + country + "/" + city + ".json";
+                string uri = "http://api.wunderground.com/api/49b92ea52ed55fe0/forecast10day/q/NY/New_York.json" + country + "/" + city + ".json";
 
                 HttpClient client = new HttpClient();
                 string jsonstring = await client.GetStringAsync(uri);
